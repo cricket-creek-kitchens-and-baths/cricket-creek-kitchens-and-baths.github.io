@@ -1,3 +1,9 @@
+import { footerText } from '@/content';
+
 export function Footer() {
-  return <footer data-name={Footer.name}>Footer</footer>;
+  return (
+    <footer className="footer" data-name={Footer.name}>
+      {footerText}
+    </footer>
+  );
 }

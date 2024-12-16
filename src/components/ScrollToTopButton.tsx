@@ -12,6 +12,9 @@ export function ScrollToTopButton() {
       data-displayname={ScrollToTopButton.name}
       onClick={scrollToTop}
       ref={scrollRef}
+      style={{
+        position: 'fixed'
+      }}
     ></div>
   );
 }

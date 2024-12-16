@@ -4,6 +4,9 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { ScrollToTopButton } from '@/components/ScrollToTopButton';
+import { Theme } from '@/components/Theme';
+
+import '@/components/app.css';
 
 export function App() {
   const { pathname } = useLocation();
@@ -14,13 +17,19 @@ export function App() {
   }, [pathname]);
 
   return (
-    <div data-name={App.name} data-version={import.meta.env.APP_VERSION}>
-      <ScrollToTopButton />
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
+    <Theme>
+      <div
+        className="app"
+        data-name={App.name}
+        data-version={import.meta.env.APP_VERSION}
+      >
+        <ScrollToTopButton />
+        <Header />
+        <main className="page">
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
+    </Theme>
   );
 }

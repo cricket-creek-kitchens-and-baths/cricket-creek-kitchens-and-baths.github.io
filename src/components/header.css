@@ -1,0 +1,9 @@
+.logo-overlay {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.logo:hover + .logo-overlay,
+.logo-overlay:hover {
+  opacity: 0.3;
+}

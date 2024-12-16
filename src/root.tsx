@@ -17,8 +17,6 @@ import { KitchensPage } from '@/pages/KitchensPage';
 import { TestimonialsPage } from '@/pages/TestimonialsPage';
 import { Route } from '@/routes';
 
-import '@/root.css';
-
 const router = createBrowserRouter([
   {
     path: '',

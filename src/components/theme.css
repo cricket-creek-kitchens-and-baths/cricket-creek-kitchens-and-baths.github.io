@@ -1,0 +1,71 @@
+html {
+  overflow: hidden;
+  overscroll-behavior: none;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+}
+
+html,
+body,
+.theme {
+  --min-page-width: 300px;
+  display: grid;
+  margin: 0;
+  min-height: 100vh;
+  min-width: var(--min-page-width);
+  padding: 0;
+  position: relative;
+}
+
+#theme-toggle {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.theme,
+#light-mode-toggle,
+#dark-mode-toggle {
+  transition-duration: 333ms;
+  transition-timing-function: ease-in-out;
+}
+.theme {
+  transition-property: background-color, color;
+}
+#light-mode-toggle,
+#dark-mode-toggle {
+  transition-property: opacity;
+}
+
+#light-mode-toggle {
+  opacity: 1;
+}
+:is(html[data-theme='light'], #theme-toggle:checked ~ .theme)
+  #light-mode-toggle {
+  opacity: 0;
+}
+
+#dark-mode-toggle {
+  opacity: 0;
+}
+:is(html[data-theme='light'], #theme-toggle:checked ~ .theme)
+  #dark-mode-toggle {
+  opacity: 1;
+}
+
+.theme {
+  --theme-color: #ffffff;
+  --text-color: #333333;
+}
+html[data-theme='light'],
+#theme-toggle:checked ~ .theme {
+  --theme-color: #333333;
+  --text-color: #ffffff;
+}
+
+.theme {
+  --green: #019934;
+  --light-green: #84c340;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+}
