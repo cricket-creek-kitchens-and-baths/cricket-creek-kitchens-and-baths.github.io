@@ -1,3 +1,7 @@
 export function BasementsPage() {
-  return <div data-name={BasementsPage.name}>BasementsPage</div>;
+  return (
+    <div className="page" data-name={BasementsPage.name}>
+      BasementsPage
+    </div>
+  );
 }

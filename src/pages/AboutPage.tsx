@@ -1,3 +1,7 @@
 export function AboutPage() {
-  return <div data-name={AboutPage.name}>AboutPage</div>;
+  return (
+    <div className="page" data-name={AboutPage.name}>
+      AboutPage
+    </div>
+  );
 }

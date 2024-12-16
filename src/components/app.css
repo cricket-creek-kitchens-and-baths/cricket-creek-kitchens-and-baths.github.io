@@ -7,10 +7,14 @@
 
 .header,
 .header-topbar,
-.page,
+.main,
 .footer {
   position: relative;
   width: 100%;
+}
+
+.page {
+  height: 100%;
 }
 
 a {
@@ -21,7 +25,7 @@ a {
 .footer {
   background-color: var(--green);
   box-sizing: border-box;
-  color: #ffffff;
+  color: var(--white);
   font-size: 14px;
   font-weight: 500;
   padding: var(--page-gutter);
@@ -29,15 +33,7 @@ a {
 .header-topbar {
   border-bottom: 1px solid var(--light-green);
 }
-.header-nav {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-}
-.header-nav > * {
-  display: grid;
-  grid-template-rows: 1fr;
-  padding: var(--page-gutter);
-}
+
 .footer {
   border-top: 1px solid var(--light-green);
   text-align: center;
@@ -53,15 +49,11 @@ body {
 }
 
 svg {
-  color: #ffffff;
+  color: var(--white);
   height: var(--icon-size);
   overflow: visible;
   width: var(--icon-size);
 }
 svg:focus {
   outline: none;
-}
-
-.header-topbar-content {
-  margin-right: calc(var(--page-gutter) + var(--icon-size));
 }

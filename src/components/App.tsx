@@ -25,7 +25,7 @@ export function App() {
       >
         <ScrollToTopButton />
         <Header />
-        <main className="page">
+        <main className="main">
           <Outlet />
         </main>
         <Footer />

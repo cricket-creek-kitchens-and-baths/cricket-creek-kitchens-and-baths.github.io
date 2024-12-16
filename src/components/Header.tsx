@@ -32,45 +32,30 @@ export function Header() {
       </div>
       <div className="header-nav">
         <a
+          className="header-nav-link"
           // aria-label={CricketCreek}
           // onClick={goTo(Home)}
-          style={{
-            aspectRatio: 'auto 357 / 122',
-            position: 'relative',
-            height: '80px'
-          }}
         >
+          <span className="logo">
+            <img
+              // alt={CricketCreek}
+              className="logo-image"
+              draggable={false}
+              src="header-logo.png"
+            />
+            <img
+              aria-hidden="true"
+              className="logo-overlay"
+              draggable={false}
+              src="logo-overlay.png"
+            />
+          </span>
+
           <img
             // alt={CricketCreek}
-            className="logo"
+            className="logo-title"
             draggable={false}
-            src="/logo.png"
-            style={
-              {
-                // aspectRatio: 'auto 357 / 122',
-                height: '80px',
-                // width: '200px'
-                // height: '96px',
-                // width: isSmall ? '200px' : '280px',
-              }
-            }
-          />
-          <img
-            aria-hidden="true"
-            className="logo-overlay"
-            draggable={false}
-            role="presentation"
-            src="/logo-overlay.png"
-            style={
-              {
-                // height: '85px',
-                height: '80px',
-                // position: 'absolute',
-                // left: 0,
-                // top: 0,
-              }
-            }
-            tabIndex={-1}
+            src="header-title.png"
           />
         </a>
         <div>nav - links</div>

@@ -1,3 +1,7 @@
 export function GalleryPage() {
-  return <div data-name={GalleryPage.name}>GalleryPage</div>;
+  return (
+    <div className="page" data-name={GalleryPage.name}>
+      GalleryPage
+    </div>
+  );
 }

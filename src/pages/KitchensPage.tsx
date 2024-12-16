@@ -1,3 +1,7 @@
 export function KitchensPage() {
-  return <div data-name={KitchensPage.name}>KitchensPage</div>;
+  return (
+    <div className="page" data-name={KitchensPage.name}>
+      KitchensPage
+    </div>
+  );
 }

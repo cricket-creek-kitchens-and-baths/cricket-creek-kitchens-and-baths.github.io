@@ -1,3 +1,7 @@
 export function TestimonialsPage() {
-  return <div data-name={TestimonialsPage.name}>TestimonialsPage</div>;
+  return (
+    <div className="page" data-name={TestimonialsPage.name}>
+      TestimonialsPage
+    </div>
+  );
 }

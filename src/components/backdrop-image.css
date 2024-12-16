@@ -1,0 +1,35 @@
+/* hide for xl breakpoint */
+
+.backdrop {
+  height: 100%;
+}
+
+.backdrop,
+.backdrop-image,
+.backdrop-overlay {
+  left: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* z-index: -1; */
+}
+
+.backdrop-image {
+  background-attachment: fixed;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-image-slice: 100%;
+}
+
+.backdrop-overlay {
+  background-color: #000000;
+  opacity: 0.3;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
+}

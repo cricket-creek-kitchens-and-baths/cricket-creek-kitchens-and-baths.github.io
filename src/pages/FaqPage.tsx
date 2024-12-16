@@ -1,3 +1,7 @@
 export function FaqPage() {
-  return <div data-name={FaqPage.name}>FaqPage</div>;
+  return (
+    <div className="page" data-name={FaqPage.name}>
+      FaqPage
+    </div>
+  );
 }
