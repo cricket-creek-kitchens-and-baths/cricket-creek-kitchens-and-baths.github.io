@@ -55,6 +55,7 @@ body,
 .theme {
   --theme-color: #ffffff;
   --text-color: #333333;
+  --dark-green: #016520;
   --green: #019934;
   --light-green: #84c340;
   --white: #ffffff;
@@ -62,11 +63,11 @@ body,
 }
 html[data-theme='dark'],
 #theme-toggle:checked ~ .theme {
-  --theme-color: #1c211a;
+  /* --theme-color: #1c211a;
   --text-color: #ffffff;
   --green: #025a1f;
   --light-green: #019934;
-  --filter: brightness(0.6);
+  --filter: brightness(0.6); */
 }
 
 .theme {

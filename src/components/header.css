@@ -129,6 +129,7 @@ i.icon {
 }
 
 .header-topbar-links a {
-  color: var(--white);
+  /* color: var(--white); */
+  color: inherit;
   text-decoration: none;
 }

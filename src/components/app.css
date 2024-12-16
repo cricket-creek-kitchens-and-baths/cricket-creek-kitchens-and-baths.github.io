@@ -24,7 +24,7 @@ a {
 
 .header-topbar,
 .footer {
-  background-color: var(--green);
+  background-color: var(--dark-green);
   box-sizing: border-box;
   color: var(--white);
   font-size: 14px;
