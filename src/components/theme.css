@@ -1,3 +1,19 @@
+:root {
+  --min-page-width: 320px;
+  --page-gutter: 16px;
+  --icon-size: 16px;
+  --line-height: 19px;
+  --theme-toggle-width: calc(
+    var(--line-height) + var(--page-gutter) + var(--page-gutter)
+  );
+}
+
+@media screen and (width < 350px) {
+  :root {
+    --page-gutter: 8px;
+  }
+}
+
 html {
   overflow: hidden;
   overscroll-behavior: none;
@@ -8,7 +24,6 @@ html {
 html,
 body,
 .theme {
-  --min-page-width: 300px;
   display: grid;
   margin: 0;
   min-height: 100vh;

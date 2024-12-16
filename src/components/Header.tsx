@@ -10,34 +10,40 @@ export function Header() {
   return (
     <header className="header" data-name={Header.name}>
       <div className="header-topbar">
-        <div className="header-topbar-links">
+        <div className="header-topbar-content">
           <Link href={`tel:${phone}`}>
-            <span className="icon-phone" ></span>
+            <span className="icon-phone"></span>
             <div>{phone}</div>
           </Link>
           <Link href={`mailto:${email}`}>
-            <span className="icon-envelope-letter" ></span>
+            <span className="icon-envelope-letter"></span>
             <div>{email}</div>
           </Link>
+          <ThemeToggle />
         </div>
-        <ThemeToggle />
       </div>
       <div className="header-nav">
-        <Link aria-label={title} className="header-nav-link" route={Route.Home}>
-          <Image
-            alt={title}
-            className="logo"
-            draggable={false}
-            src="images/logo.png"
-          />
-          <Image
-            aria-hidden={true}
-            className="logo-overlay"
-            draggable={false}
-            src="images/logo-overlay.png"
-          />
-        </Link>
-        <div>Home About Services FAQ Gallery Testimonials Contact Us</div>
+        <div className="header-nav-content">
+          <Link
+            aria-label={title}
+            className="header-nav-link"
+            route={Route.Home}
+          >
+            <Image
+              alt={title}
+              className="logo"
+              draggable={false}
+              src="images/logo.png"
+            />
+            <Image
+              aria-hidden={true}
+              className="logo-overlay"
+              draggable={false}
+              src="images/logo-overlay.png"
+            />
+          </Link>
+          <div>Home About Services FAQ Gallery Testimonials Contact Us</div>
+        </div>
       </div>
     </header>
   );
