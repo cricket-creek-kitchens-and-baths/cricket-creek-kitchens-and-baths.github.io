@@ -9,3 +9,7 @@ export enum Route {
   Testimonials = '/testimonials/',
   Contact = '/contact-us/',
 }
+
+export function isRoute(value?: string): value is Route {
+  return Object.values(Route).some((route) => value === route);
+}

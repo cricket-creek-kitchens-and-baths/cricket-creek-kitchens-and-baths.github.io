@@ -1,6 +1,8 @@
 import { Image } from '@/components/Image';
+import { Link } from '@/components/Link';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import { companyName } from '@/content';
+import { email, phone, title } from '@/content';
+import { Route } from '@/routes';
 
 import '@/components/header.css';
 
@@ -9,25 +11,21 @@ export function Header() {
     <header className="header" data-name={Header.name}>
       <div className="header-topbar">
         <div className="header-topbar-links">
-          <a>
+          <Link href={`tel:${phone}`}>
             <i className="icon icon-phone"></i>
-            <div>123-456-7890</div>
-          </a>
-          <a>
+            <div>{phone}</div>
+          </Link>
+          <Link href={`mailto:${email}`}>
             <i className="icon icon-envelope-letter"></i>
-            <div>email@example.com</div>
-          </a>
+            <div>{email}</div>
+          </Link>
         </div>
         <ThemeToggle />
       </div>
       <div className="header-nav">
-        <a
-          className="header-nav-link"
-          // aria-label={CricketCreek}
-          // onClick={goTo(Home)}
-        >
+        <Link aria-label={title} className="header-nav-link" route={Route.Home}>
           <Image
-            alt={companyName}
+            alt={title}
             className="logo"
             draggable={false}
             src="logo.png"
@@ -38,7 +36,7 @@ export function Header() {
             draggable={false}
             src="logo-overlay.png"
           />
-        </a>
+        </Link>
         <div>Home About Services FAQ Gallery Testimonials Contact Us</div>
       </div>
     </header>
