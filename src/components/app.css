@@ -37,6 +37,8 @@
 .header-topbar-content a,
 .logo,
 .header-nav-links a,
+.header-nav-links .services-popper,
+.menu-button,
 .page-content {
   padding: var(--page-gutter);
 }

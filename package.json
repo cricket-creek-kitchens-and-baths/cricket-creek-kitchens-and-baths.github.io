@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/styled": "*",
+    "@mui/material": "*",
     "react": "*",
     "react-dom": "*",
     "react-router-dom": "*"

@@ -1,5 +1,6 @@
 import { Image } from '@/components/Image';
 import { Link } from '@/components/Link';
+import { ServicesPopper } from '@/components/ServicesPopper';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { email, phone, title } from '@/content';
 import { Route } from '@/routes';
@@ -45,16 +46,18 @@ export function Header() {
           <div className="header-nav-links">
             <Link>Home</Link>
             <Link>About</Link>
-            <Link>
-              Services
-              <span className="icon-arrow-down services-icon"></span>
-            </Link>
+            <ServicesPopper />
             <Link>FAQ</Link>
             <Link>Gallery</Link>
             <Link>Testimonials</Link>
             <Link>Gallery</Link>
           </div>
-          <div className="header-nav-menu">MENU</div>
+          <div className="header-nav-menu">
+            <div className="menu-button">
+              <span className="icon-menu"></span>
+              <div className="menu-button-label">Menu</div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
