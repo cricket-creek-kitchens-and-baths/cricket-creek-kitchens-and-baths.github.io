@@ -16,15 +16,12 @@ const icons = [
 ] as const;
 
 export function ThemeToggle() {
- 
-
   return (
     <label
-      aria-hidden={true}
+      aria-label="Theme Toggle"
       data-name={ThemeToggle.name}
       htmlFor="theme-toggle"
       id="theme-toggle-label"
-      tabIndex={0}
     >
       {icons.map(({ id, drawPath, viewBox }) => (
         <svg

@@ -127,3 +127,8 @@ i.icon {
   display: grid;
   /* width: 100%; */
 }
+
+.header-topbar-links a {
+  color: var(--white);
+  text-decoration: none;
+}
