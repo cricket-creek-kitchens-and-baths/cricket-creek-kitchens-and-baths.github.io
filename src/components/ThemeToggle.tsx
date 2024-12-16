@@ -16,22 +16,14 @@ const icons = [
 ] as const;
 
 export function ThemeToggle() {
-  const padding = 'calc(var(--page-gutter) / 2)';
-  const position = {
-    position: 'absolute' as const,
-    right: padding,
-    top: padding,
-  };
+ 
+
   return (
     <label
       aria-hidden={true}
       data-name={ThemeToggle.name}
       htmlFor="theme-toggle"
-      style={{
-        cursor: 'pointer',
-        zIndex: 300,
-        ...position,
-      }}
+      id="theme-toggle-label"
       tabIndex={0}
     >
       {icons.map(({ id, drawPath, viewBox }) => (
@@ -43,7 +35,6 @@ export function ThemeToggle() {
           role="button"
           stroke="none"
           strokeWidth="0.5px"
-          style={position}
           viewBox={viewBox}
         >
           {drawPath.map((d, index) => (

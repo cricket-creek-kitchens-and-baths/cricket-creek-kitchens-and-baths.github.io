@@ -1,6 +1,6 @@
 .app {
   --page-gutter: 16px;
-  --icon-size: 20px;
+  --icon-size: 16px;
   display: grid;
   grid-template-rows: max-content 1fr max-content;
 }
@@ -9,8 +9,9 @@
 .header-topbar,
 .main,
 .footer {
+  /* box-sizing: border-box; */
   position: relative;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .page {
@@ -27,7 +28,7 @@ a {
   box-sizing: border-box;
   color: var(--white);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
   padding: var(--page-gutter);
 }
 .header-topbar {

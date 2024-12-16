@@ -1,19 +1,19 @@
-import { useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useCallback } from 'react';
+// import { useNavigate } from 'react-router-dom';
 
 import { BackdropImage } from '@/components/BackdropImage';
 
 export function HomePage() {
   const kitchenImageSrc = 'home-page-kitchen.jpeg';
-  const bathroomImageSrc = 'home-page-bathroom.jpeg';
+  // const bathroomImageSrc = 'home-page-bathroom.jpeg';
 
-  const navigate = useNavigate();
-  const goTo = useCallback(
-    (path: string) => () => {
-      navigate(path);
-    },
-    [],
-  );
+  // const navigate = useNavigate();
+  // const goTo = useCallback(
+  //   (path: string) => () => {
+  //     navigate(path);
+  //   },
+  //   [],
+  // );
 
   // display="flex"
   // flexDirection="column"
@@ -24,6 +24,7 @@ export function HomePage() {
   return (
     <div className="page" data-name={HomePage.name}>
       <BackdropImage imageSrc={kitchenImageSrc} />
+
     </div>
   );
 }

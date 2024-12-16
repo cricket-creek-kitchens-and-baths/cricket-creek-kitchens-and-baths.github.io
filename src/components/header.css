@@ -1,8 +1,8 @@
-.logo-image,
+/* .logo,
 .logo-overlay {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-}
+} */
 
 .logo-overlay {
   opacity: 0;
@@ -15,48 +15,115 @@
 .header-nav {
   background-color: var(--white);
   color: #333333;
+  /* padding: var(--page-gutter); */
 }
-.header-nav-link {
+/* .header-nav-link {
   align-items: center;
   display: grid;
   grid-template-columns: repeat(2, max-content);
   position: relative;
   white-space: nowrap;
-}
-.logo,
-.logo-image,
-.logo-overlay,
-.logo-title {
-  /* filter: invert(1); */
-  /* height: 80px; */
-}
+} */
 
-.logo-image,
 .logo-overlay {
-  width: 80px;
+  /* width: 80px; */
 }
-.logo-title {
+/* .logo-title {
   height: 80px;
-  padding: 0 6px;
-}
+  padding: 0 3px;
+} */
 
-.header-nav {
+/* .header-nav {
   display: grid;
   grid-template-columns: max-content 1fr;
-}
+} */
 
 .logo {
   display: grid;
-  padding: var(--page-gutter);
-  padding-right: 0;
+  /* padding: var(--page-gutter) 0; */
+  width: 280px;
 }
 
-.header-topbar-content {
-  margin-right: calc(var(--page-gutter) + var(--icon-size));
+/* .header-topbar-content {
+  padding-right: calc(var(--page-gutter) + var(--icon-size));
+  position: relative;
+} */
+/* .header-topbar-content,
+.header-topbar-links {
+  height: var(--icon-size);
+} */
+/* .header-topbar-links,
+.header-topbar-links a {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
 }
+.header-topbar-links {
+  gap: 12px;
+}
+.header-topbar-links a {
+  gap: 4px;
+} */
+/* .header-topbar-links,
+.header-topbar-links * {
+} */
 
 .header-nav,
 .header-topbar,
 .footer {
   filter: var(--filter);
+}
+
+/* .header-topbar,
+.header-topbar-content {
+  display: grid;
+} */
+/* .header-topbar-content {
+  grid-template-columns: max-content;
+} */
+
+#theme-toggle-label {
+  --padding: calc(var(--page-gutter) * -1);
+  --size: calc(var(--icon-size) + var(--page-gutter) + var(--page-gutter));
+  cursor: pointer;
+  height: var(--size);
+  right: var(--padding);
+  top: var(--padding);
+  width: var(--size);
+  z-index: 300;
+}
+#theme-toggle-label,
+#theme-toggle-label svg {
+  position: absolute;
+}
+#theme-toggle-label svg {
+  right: var(--page-gutter);
+  top: var(--page-gutter);
+}
+
+i.icon {
+  /* margin: 0 7px; */
+  /* font-family: ; */
+}
+
+/* .header-nav-link {
+  position: relative;
+} */
+/* .logo-overlay {
+  position: absolute;
+} */
+
+.logo-overlay {
+  /* height: 86.5px;
+  left: 1.5px;
+  position: absolute;
+  top: 3px; */
+  display: none;
+}
+
+.header,
+.header-topbar {
+  /* box-sizing: border-box; */
+  display: grid;
+  /* width: 100%; */
 }
