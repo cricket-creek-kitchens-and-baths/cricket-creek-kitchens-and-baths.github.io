@@ -1,2 +1,4 @@
+export const companyName = 'Cricket Creek Kitchens & Baths' as const;
+
 export const footerText =
-  '© Copyright - Cricket Creek Kitchens & Baths | All Rights Reserved.';
+  `© Copyright - ${companyName} | All Rights Reserved.` as const;

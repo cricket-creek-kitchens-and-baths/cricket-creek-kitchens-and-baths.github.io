@@ -1,4 +1,6 @@
+import { Image } from '@/components/Image';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { companyName } from '@/content';
 
 import '@/components/header.css';
 
@@ -24,14 +26,14 @@ export function Header() {
           // aria-label={CricketCreek}
           // onClick={goTo(Home)}
         >
-          <img
-            // alt={CricketCreek}
+          <Image
+            alt={companyName}
             className="logo"
             draggable={false}
             src="logo.png"
           />
-          <img
-            aria-hidden="true"
+          <Image
+            aria-hidden={true}
             className="logo-overlay"
             draggable={false}
             src="logo-overlay.png"
