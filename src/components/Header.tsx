@@ -42,7 +42,19 @@ export function Header() {
               src="images/logo-overlay.png"
             />
           </Link>
-          <div>Home About Services FAQ Gallery Testimonials Contact Us</div>
+          <div className="header-nav-links">
+            <Link>Home</Link>
+            <Link>About</Link>
+            <Link>
+              Services
+              <span className="icon-arrow-down services-icon"></span>
+            </Link>
+            <Link>FAQ</Link>
+            <Link>Gallery</Link>
+            <Link>Testimonials</Link>
+            <Link>Gallery</Link>
+          </div>
+          <div className="header-nav-menu">MENU</div>
         </div>
       </div>
     </header>

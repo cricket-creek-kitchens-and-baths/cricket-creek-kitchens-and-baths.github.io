@@ -18,3 +18,49 @@
   top: 3px; */
   display: none;
 }
+
+.header-nav-links {
+  align-items: stretch;
+  color: #555555;
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: 'noto-sans';
+  font-size: 15px;
+  font-weight: 400;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.header-nav-links a {
+  align-items: center;
+  cursor: pointer;
+  display: inherit;
+  justify-content: center;
+  position: relative;
+}
+.header-nav-links a:is(:hover, :focus, :active) {
+  color: var(--light-green);
+  /* text-decoration: underline;
+  text-underline-offset: 4px; */
+}
+.header-nav-menu {
+  display: none;
+}
+@media screen and (width < 1096px) {
+  .header-nav-links {
+    display: none;
+  }
+  .header-nav-menu {
+    display: grid;
+  }
+}
+
+.services-icon.icon-arrow-down {
+  /* display: inline-flex; */
+  font-size: 10px;
+  font-weight: bold;
+  padding: 8px;
+}
+/* .services-icon.icon-arrow-down:before {
+  display: inline-flex;
+} */
