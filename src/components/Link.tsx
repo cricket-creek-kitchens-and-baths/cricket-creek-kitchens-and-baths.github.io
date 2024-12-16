@@ -1,7 +1,8 @@
 import type { AnchorHTMLAttributes, DetailedHTMLProps } from 'react';
 
 import { useGoTo } from '@/hooks/useGoTo';
-import { Route, isRoute } from '@/routes';
+import type { Route } from '@/routes';
+import { isRoute } from '@/routes';
 import { isDevEnv } from '@/utils/env';
 
 type LinkProps = DetailedHTMLProps<
@@ -11,31 +12,15 @@ type LinkProps = DetailedHTMLProps<
 
 export function Link({ route, ...props }: LinkProps & { route?: Route }) {
   if (isDevEnv && !isRoute(route) && !props.href)
-    console.info(
-      '[SEO]: link is not crawlable',
-      `route: '${route}'`,
-
-      route !== undefined,
-      'Home' in Route,
-      props,
-    );
+    console.info('[SEO]: link is not crawlable', `route: '${route}'`, props);
 
   const goTo = useGoTo();
-  const optional = route
+  const optional = isRoute(route)
     ? {
         href: route,
         onClick: goTo(route),
       }
     : {};
 
-  return (
-    <a
-      // aria-label={title}
-      // className="header-nav-link"
-      // href={Route.Home}
-      // onClick={goTo(Route.Home)}
-      {...optional}
-      {...props}
-    />
-  );
+  return <a {...optional} {...props} />;
 }
