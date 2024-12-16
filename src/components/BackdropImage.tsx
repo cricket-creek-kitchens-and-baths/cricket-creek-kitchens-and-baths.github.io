@@ -21,7 +21,7 @@ export function BackdropImage({
       <div
         className="backdrop-image"
         style={{
-          backgroundImage: `url(/${imageSrc})`,
+          backgroundImage: `url(images/${imageSrc})`,
           height,
           minHeight,
         }}

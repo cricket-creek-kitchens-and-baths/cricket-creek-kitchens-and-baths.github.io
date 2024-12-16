@@ -7,9 +7,16 @@ type ImageProps = DetailedHTMLProps<
   HTMLImageElement
 >;
 
-export function Image(props: ImageProps) {
+export function Image({ src, srcSet, ...props }: ImageProps) {
   if (isDevEnv && !props.alt && props['aria-hidden'] !== true)
     console.info('[SEO]: image is missing [alt] attribute', props);
 
-  return <img draggable={false} {...props}></img>;
+  return (
+    <img
+      draggable={false}
+      src={src}
+      srcSet={`${src} 1x, ${src} 2x`}
+      {...props}
+    ></img>
+  );
 }

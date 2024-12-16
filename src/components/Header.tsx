@@ -28,13 +28,13 @@ export function Header() {
             alt={title}
             className="logo"
             draggable={false}
-            src="logo.png"
+            src="images/logo.png"
           />
           <Image
             aria-hidden={true}
             className="logo-overlay"
             draggable={false}
-            src="logo-overlay.png"
+            src="images/logo-overlay.png"
           />
         </Link>
         <div>Home About Services FAQ Gallery Testimonials Contact Us</div>
