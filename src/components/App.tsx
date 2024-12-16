@@ -6,7 +6,6 @@ import { Header } from '@/components/Header';
 import { ScrollToTopButton } from '@/components/ScrollToTopButton';
 import { Theme } from '@/components/Theme';
 
-import '@/fonts/simple-line-icons.min.css';
 import '@/components/app.css';
 
 export function App() {

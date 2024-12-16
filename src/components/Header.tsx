@@ -12,11 +12,11 @@ export function Header() {
       <div className="header-topbar">
         <div className="header-topbar-links">
           <Link href={`tel:${phone}`}>
-            <i className="icon icon-phone"></i>
+            <span className="icon-phone" ></span>
             <div>{phone}</div>
           </Link>
           <Link href={`mailto:${email}`}>
-            <i className="icon icon-envelope-letter"></i>
+            <span className="icon-envelope-letter" ></span>
             <div>{email}</div>
           </Link>
         </div>
