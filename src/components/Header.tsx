@@ -38,13 +38,13 @@ export function Header() {
               alt={title}
               className="logo"
               draggable={false}
-              src="images/logo.png"
+              src="/images/logo.png"
             />
             <Image
               aria-hidden={true}
               className="logo-overlay"
               draggable={false}
-              src="images/logo-overlay.png"
+              src="/images/logo-overlay.png"
             />
           </Link>
 
