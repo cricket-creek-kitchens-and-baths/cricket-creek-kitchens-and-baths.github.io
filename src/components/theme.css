@@ -1,6 +1,6 @@
 :root {
   --min-page-width: 320px;
-  --page-gutter: 16px;
+  --page-gutter: 11px;
   --icon-size: 16px;
   --line-height: 19px;
   --theme-toggle-width: calc(

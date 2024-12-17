@@ -50,13 +50,13 @@ export function Header() {
 
           {isXLarge ? (
             <div className="header-nav-links">
-              <Link>Home</Link>
-              <Link>About</Link>
+              <Link route={Route.Home}>Home</Link>
+              <Link route={Route.About}>About</Link>
               <ServicesPopper />
-              <Link>FAQ</Link>
-              <Link>Gallery</Link>
-              <Link>Testimonials</Link>
-              <Link>Gallery</Link>
+              <Link route={Route.Faq}>FAQ</Link>
+              <Link route={Route.Gallery}>Gallery</Link>
+              <Link route={Route.Testimonials}>Testimonials</Link>
+              <Link route={Route.Contact}>Contact Us</Link>
             </div>
           ) : (
             <div className="header-nav-menu">

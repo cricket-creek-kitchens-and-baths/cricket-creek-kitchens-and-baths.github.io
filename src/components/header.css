@@ -35,8 +35,9 @@
   flex-wrap: nowrap;
   font-family: 'noto-sans';
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 300;
   justify-content: flex-end;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -47,6 +48,11 @@
   display: inherit;
   justify-content: center;
   position: relative;
+}
+.header-nav-links > a {
+  color: #555555;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 .header-nav-links > a:is(:hover, :focus, :active) {
   color: var(--light-green);

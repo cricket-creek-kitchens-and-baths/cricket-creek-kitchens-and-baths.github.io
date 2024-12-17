@@ -2,6 +2,7 @@ import type { MouseEventHandler } from 'react';
 import { useCallback, useState } from 'react';
 
 import { Link } from '@/components/Link';
+import { Route } from '@/routes';
 
 export type SidebarProps = {
   handleClose: MouseEventHandler<HTMLDivElement>;
@@ -27,8 +28,8 @@ export function Sidebar({ handleClose }: SidebarProps) {
         <span className="icon-close"></span>
       </div>
 
-      <Link>Home</Link>
-      <Link>About</Link>
+      <Link route={Route.Home}>Home</Link>
+      <Link route={Route.About}>About</Link>
 
       <div className="toggle-services" onClick={handleToggle}>
         <div>Services</div>
@@ -41,25 +42,25 @@ export function Sidebar({ handleClose }: SidebarProps) {
 
       {/* handleClose={closeAll} */}
       {open ? (
-        <Link className="sidebar-service">
+        <Link className="sidebar-service" route={Route.Bathrooms}>
           <span className="icon-arrow-right"></span>Beautiful Bathrooms
         </Link>
       ) : null}
       {open ? (
-        <Link className="sidebar-service">
+        <Link className="sidebar-service" route={Route.Kitchens}>
           <span className="icon-arrow-right"></span>Fabulous Kitchens
         </Link>
       ) : null}
       {open ? (
-        <Link className="sidebar-service">
+        <Link className="sidebar-service" route={Route.Basements}>
           <span className="icon-arrow-right"></span>Great Basements
         </Link>
       ) : null}
 
-      <Link>FAQ</Link>
-      <Link>Gallery</Link>
-      <Link>Testimonials</Link>
-      <Link>Contact Us</Link>
+      <Link route={Route.Faq}>FAQ</Link>
+      <Link route={Route.Gallery}>Gallery</Link>
+      <Link route={Route.Testimonials}>Testimonials</Link>
+      <Link route={Route.Contact}>Contact Us</Link>
     </div>
   );
 }

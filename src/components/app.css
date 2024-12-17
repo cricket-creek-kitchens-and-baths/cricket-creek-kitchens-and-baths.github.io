@@ -31,16 +31,18 @@
 .footer-content,
 .page-content {
   max-width: 1200px;
-  width: 95%;
+  width: 92%;
 }
 .footer-content,
 .header-topbar-content > a,
-.logo,
 .header-nav-links > a,
 .services-popper-label,
 .menu-button,
 .page-content {
   padding: var(--page-gutter);
+}
+.logo {
+  padding: calc(var(--page-gutter) + 3px) var(--page-gutter);
 }
 
 .header-nav {

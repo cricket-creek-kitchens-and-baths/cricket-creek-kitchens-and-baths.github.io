@@ -1,5 +1,5 @@
 export enum Route {
-  Home = '',
+  Home = '/',
   About = '/about-cricket-creek/',
   Bathrooms = '/beautiful-bathrooms/',
   Basements = '/great-basements/',

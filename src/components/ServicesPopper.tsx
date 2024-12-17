@@ -2,6 +2,7 @@ import Popper from '@mui/material/Popper';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { Link } from '@/components/Link';
+import { Route } from '@/routes';
 
 export function ServicesPopper() {
   const popperRef = useRef<HTMLDivElement | null>(null);
@@ -60,9 +61,9 @@ export function ServicesPopper() {
           zIndex: isHovered ? 200 : -1,
         }}
       >
-        <Link>Beautiful Bathrooms</Link>
-        <Link>Fabulous Kitchens</Link>
-        <Link>Great Basements</Link>
+        <Link route={Route.Bathrooms}>Beautiful Bathrooms</Link>
+        <Link route={Route.Kitchens}>Fabulous Kitchens</Link>
+        <Link route={Route.Basements}>Great Basements</Link>
       </Popper>
     </div>
   );
