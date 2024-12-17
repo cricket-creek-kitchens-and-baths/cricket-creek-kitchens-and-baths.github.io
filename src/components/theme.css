@@ -41,7 +41,7 @@ body,
 .theme,
 #light-mode-toggle,
 #dark-mode-toggle {
-  transition-duration: 333ms;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
 .theme {
@@ -67,13 +67,16 @@ body,
   opacity: 1;
 }
 
-.theme {
-  --theme-color: #ffffff;
-  --text-color: #333333;
+:root {
   --dark-green: #016520;
   --green: #019934;
   --light-green: #84c340;
   --white: #ffffff;
+}
+
+.theme {
+  --theme-color: #ffffff;
+  --text-color: #333333;
   --filter: none;
 }
 html[data-theme='dark'],

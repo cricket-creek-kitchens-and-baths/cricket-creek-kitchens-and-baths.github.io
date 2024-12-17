@@ -1,13 +1,17 @@
 import { Image } from '@/components/Image';
 import { Link } from '@/components/Link';
+import { MenuButton } from '@/components/MenuButton';
 import { ServicesPopper } from '@/components/ServicesPopper';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { email, phone, title } from '@/content';
+import { useXLargeBreakpoint } from '@/hooks/useBreakpoint';
 import { Route } from '@/routes';
 
 import '@/components/header.css';
 
 export function Header() {
+  const isXLarge = useXLargeBreakpoint();
+
   return (
     <header className="header" data-name={Header.name}>
       <div className="header-topbar">
@@ -43,21 +47,22 @@ export function Header() {
               src="images/logo-overlay.png"
             />
           </Link>
-          <div className="header-nav-links">
-            <Link>Home</Link>
-            <Link>About</Link>
-            <ServicesPopper />
-            <Link>FAQ</Link>
-            <Link>Gallery</Link>
-            <Link>Testimonials</Link>
-            <Link>Gallery</Link>
-          </div>
-          <div className="header-nav-menu">
-            <div className="menu-button">
-              <span className="icon-menu"></span>
-              <div className="menu-button-label">Menu</div>
+
+          {isXLarge ? (
+            <div className="header-nav-links">
+              <Link>Home</Link>
+              <Link>About</Link>
+              <ServicesPopper />
+              <Link>FAQ</Link>
+              <Link>Gallery</Link>
+              <Link>Testimonials</Link>
+              <Link>Gallery</Link>
             </div>
-          </div>
+          ) : (
+            <div className="header-nav-menu">
+              <MenuButton />
+            </div>
+          )}
         </div>
       </div>
     </header>
