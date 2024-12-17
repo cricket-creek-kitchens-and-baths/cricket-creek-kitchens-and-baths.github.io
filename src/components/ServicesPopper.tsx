@@ -1,7 +1,7 @@
 import Popper from '@mui/material/Popper';
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
-import { Link } from '@/components/Link';
 import { Route } from '@/routes';
 
 export function ServicesPopper() {
@@ -61,9 +61,15 @@ export function ServicesPopper() {
           zIndex: isHovered ? 200 : -1,
         }}
       >
-        <Link route={Route.Bathrooms}>Beautiful Bathrooms</Link>
-        <Link route={Route.Kitchens}>Fabulous Kitchens</Link>
-        <Link route={Route.Basements}>Great Basements</Link>
+        <NavLink onClick={closeMenu} to={Route.Bathrooms}>
+          Beautiful Bathrooms
+        </NavLink>
+        <NavLink onClick={closeMenu} to={Route.Kitchens}>
+          Fabulous Kitchens
+        </NavLink>
+        <NavLink onClick={closeMenu} to={Route.Basements}>
+          Great Basements
+        </NavLink>
       </Popper>
     </div>
   );

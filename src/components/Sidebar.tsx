@@ -1,25 +1,18 @@
 import type { MouseEventHandler } from 'react';
 import { useCallback, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
-import { Link } from '@/components/Link';
 import { Route } from '@/routes';
 
 export type SidebarProps = {
-  handleClose: MouseEventHandler<HTMLDivElement>;
+  handleClose: MouseEventHandler<HTMLDivElement & HTMLAnchorElement>;
 };
 export function Sidebar({ handleClose }: SidebarProps) {
-  // const maxWidth = useMaxWidth();
-
   const [open, setOpen] = useState<boolean>(false);
 
   const handleToggle = useCallback(() => {
     setOpen((isOpen) => !isOpen);
   }, []);
-
-  // const closeAll = useCallback((event) => {
-  //   setOpen(false);
-  //   handleClose(event);
-  // }, []);
 
   return (
     <div className="sidebar">
@@ -28,8 +21,12 @@ export function Sidebar({ handleClose }: SidebarProps) {
         <span className="icon-close"></span>
       </div>
 
-      <Link route={Route.Home}>Home</Link>
-      <Link route={Route.About}>About</Link>
+      <NavLink onClick={handleClose} to={Route.Home}>
+        Home
+      </NavLink>
+      <NavLink onClick={handleClose} to={Route.About}>
+        About
+      </NavLink>
 
       <div className="toggle-services" onClick={handleToggle}>
         <div>Services</div>
@@ -42,25 +39,45 @@ export function Sidebar({ handleClose }: SidebarProps) {
 
       {/* handleClose={closeAll} */}
       {open ? (
-        <Link className="sidebar-service" route={Route.Bathrooms}>
+        <NavLink
+          className="sidebar-service"
+          onClick={handleClose}
+          to={Route.Bathrooms}
+        >
           <span className="icon-arrow-right"></span>Beautiful Bathrooms
-        </Link>
+        </NavLink>
       ) : null}
       {open ? (
-        <Link className="sidebar-service" route={Route.Kitchens}>
+        <NavLink
+          className="sidebar-service"
+          onClick={handleClose}
+          to={Route.Kitchens}
+        >
           <span className="icon-arrow-right"></span>Fabulous Kitchens
-        </Link>
+        </NavLink>
       ) : null}
       {open ? (
-        <Link className="sidebar-service" route={Route.Basements}>
+        <NavLink
+          className="sidebar-service"
+          onClick={handleClose}
+          to={Route.Basements}
+        >
           <span className="icon-arrow-right"></span>Great Basements
-        </Link>
+        </NavLink>
       ) : null}
 
-      <Link route={Route.Faq}>FAQ</Link>
-      <Link route={Route.Gallery}>Gallery</Link>
-      <Link route={Route.Testimonials}>Testimonials</Link>
-      <Link route={Route.Contact}>Contact Us</Link>
+      <NavLink onClick={handleClose} to={Route.Faq}>
+        FAQ
+      </NavLink>
+      <NavLink onClick={handleClose} to={Route.Gallery}>
+        Gallery
+      </NavLink>
+      <NavLink onClick={handleClose} to={Route.Testimonials}>
+        Testimonials
+      </NavLink>
+      <NavLink onClick={handleClose} to={Route.Contact}>
+        Contact Us
+      </NavLink>
     </div>
   );
 }

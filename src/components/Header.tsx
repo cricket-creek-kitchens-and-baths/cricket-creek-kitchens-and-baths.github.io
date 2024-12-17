@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import { Image } from '@/components/Image';
 import { Link } from '@/components/Link';
 import { MenuButton } from '@/components/MenuButton';
@@ -29,10 +31,10 @@ export function Header() {
       </div>
       <div className="header-nav">
         <div className="header-nav-content">
-          <Link
+          <NavLink
             aria-label={title}
             className="header-nav-link"
-            route={Route.Home}
+            to={Route.Home}
           >
             <Image
               alt={title}
@@ -46,17 +48,17 @@ export function Header() {
               draggable={false}
               src="/images/logo-overlay.png"
             />
-          </Link>
+          </NavLink>
 
           {isXLarge ? (
             <div className="header-nav-links">
-              <Link route={Route.Home}>Home</Link>
-              <Link route={Route.About}>About</Link>
+              <NavLink to={Route.Home}>Home</NavLink>
+              <NavLink to={Route.About}>About</NavLink>
               <ServicesPopper />
-              <Link route={Route.Faq}>FAQ</Link>
-              <Link route={Route.Gallery}>Gallery</Link>
-              <Link route={Route.Testimonials}>Testimonials</Link>
-              <Link route={Route.Contact}>Contact Us</Link>
+              <NavLink to={Route.Faq}>FAQ</NavLink>
+              <NavLink to={Route.Gallery}>Gallery</NavLink>
+              <NavLink to={Route.Testimonials}>Testimonials</NavLink>
+              <NavLink to={Route.Contact}>Contact Us</NavLink>
             </div>
           ) : (
             <div className="header-nav-menu">
