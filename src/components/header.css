@@ -94,7 +94,11 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  transition: color 0.3s ease;
   white-space: nowrap;
+}
+.services-popper-label:is(:hover, :focus, :active) {
+  color: var(--light-green);
 }
 
 .header-nav-menu {

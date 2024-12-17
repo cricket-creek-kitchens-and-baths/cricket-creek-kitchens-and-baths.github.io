@@ -66,6 +66,10 @@
   gap: 8px;
   text-decoration: none;
 }
+.header-topbar-content > a:is(:hover, :focus, :active) {
+  color: inherit;
+}
+
 .footer {
   border-top: 1px solid var(--light-green);
 }
@@ -115,7 +119,13 @@ body {
   font-weight: 400; /* Use a value from 100 to 900 */
 }
 a {
+  color: var(--text-color);
   cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:is(:hover, :focus, :active) {
+  color: var(--light-green);
 }
 svg {
   box-sizing: border-box;
