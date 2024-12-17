@@ -3,6 +3,7 @@
 }
 
 .logo {
+  aspect-ratio: 357 / 122;
   display: grid;
   width: var(--logo-width);
 }
@@ -16,7 +17,7 @@
   opacity: 0;
   transition: opacity 0.3s;
 }
-.header-nav-link:hover .logo-overlay {
+.logo-link:hover .logo-overlay {
   opacity: 0.4;
 }
 
@@ -30,14 +31,14 @@
 
 .header-nav-links {
   align-items: stretch;
-  color: #555555;
   display: flex;
   flex-wrap: nowrap;
   font-family: 'noto-sans';
   font-size: 15px;
   font-weight: 300;
+  gap: 2px;
   justify-content: flex-end;
-  letter-spacing: 0.8px;
+  letter-spacing: 1.1px;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -50,7 +51,7 @@
   position: relative;
 }
 .header-nav-links > a {
-  color: #555555;
+  color: #444444;
   text-decoration: none;
   transition: color 0.3s ease;
 }

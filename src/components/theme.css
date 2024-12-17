@@ -1,5 +1,7 @@
 :root {
+  --page-width: 92%;
   --min-page-width: 320px;
+  --max-page-width: calc(1200px + var(--page-gutter) + var(--page-gutter));
   --page-gutter: 11px;
   --icon-size: 16px;
   --line-height: 19px;

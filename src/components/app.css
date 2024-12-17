@@ -30,8 +30,8 @@
 .header-topbar-content,
 .footer-content,
 .page-content {
-  max-width: 1200px;
-  width: 92%;
+  max-width: var(--max-page-width);
+  width: var(--page-width);
 }
 .footer-content,
 .header-topbar-content > a,
@@ -41,8 +41,8 @@
 .page-content {
   padding: var(--page-gutter);
 }
-.logo {
-  padding: calc(var(--page-gutter) + 3px) var(--page-gutter);
+.logo-link {
+  padding: calc(var(--page-gutter) + 4px) var(--page-gutter);
 }
 
 .header-nav {

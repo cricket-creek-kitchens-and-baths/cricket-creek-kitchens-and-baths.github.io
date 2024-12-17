@@ -33,14 +33,16 @@ export function Header() {
         <div className="header-nav-content">
           <NavLink
             aria-label={title}
-            className="header-nav-link"
+            className="logo-link"
             to={Route.Home}
           >
             <Image
               alt={title}
               className="logo"
               draggable={false}
+              // height="122"
               src="/images/logo.png"
+              // width="357"
             />
             <Image
               aria-hidden={true}

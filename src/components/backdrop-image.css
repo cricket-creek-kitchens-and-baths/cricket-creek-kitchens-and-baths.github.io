@@ -27,7 +27,7 @@
 
 .backdrop-overlay {
   background-color: #000000;
-  opacity: 0.3;
+  opacity: 0.2;
   transition:
     background 0.3s,
     border-radius 0.3s,
