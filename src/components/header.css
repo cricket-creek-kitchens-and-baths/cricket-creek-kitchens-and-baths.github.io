@@ -108,7 +108,7 @@
   font-size: 15px;
   transition: var(--transition-color);
 }
-:is(.close-menu-button, .toggle-services, .sidebar > a):is(:hover, :focus, ) {
+:is(.close-menu-button, .toggle-services, .sidebar > a):is(:hover, :focus) {
   color: var(--light-green);
 }
 
