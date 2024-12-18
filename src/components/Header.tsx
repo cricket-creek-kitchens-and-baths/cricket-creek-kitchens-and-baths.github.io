@@ -5,11 +5,7 @@ import { Link } from '@/components/Link';
 import { MenuButton } from '@/components/MenuButton';
 import { ServicesPopper } from '@/components/ServicesPopper';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import {
-  companyNameDisplayString as companyName,
-  email,
-  phone,
-} from '@/content';
+import { companyName, email, phone } from '@/content';
 import { useXLargeBreakpoint } from '@/hooks/useBreakpoint';
 import { Route } from '@/routes';
 

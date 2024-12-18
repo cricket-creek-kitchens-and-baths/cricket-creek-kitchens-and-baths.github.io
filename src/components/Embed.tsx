@@ -3,7 +3,7 @@ import Skeleton from '@mui/material/Skeleton';
 import { useCallback, useRef, useState } from 'react';
 import type { ReactEventHandler } from 'react';
 
-import { companyNameDisplayString as companyName } from '@/content';
+import { companyName } from '@/content';
 
 import '@/components/embed.css';
 

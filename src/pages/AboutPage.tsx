@@ -2,7 +2,7 @@ import { ContactUsToday } from '@/components/ContactUsToday';
 import { Embed } from '@/components/Embed';
 import { Tagline } from '@/components/Tagline';
 import {
-  companyNameDisplayString as companyName,
+  companyName,
   aboutPageContent as paragraphs,
   embedSrc as src,
 } from '@/content';
