@@ -59,6 +59,11 @@
 .page {
   padding: var(--gap);
 }
+.page {
+  height: 100%;
+  padding-bottom: var(--page-gap);
+  padding-top: var(--page-gap);
+}
 
 .header-nav {
   background-color: var(--white);
@@ -108,10 +113,6 @@
 }
 .footer-content {
   text-align: center;
-}
-.page {
-  height: 100%;
-  padding: var(--page-gap) 0;
 }
 .header-topbar,
 .footer {
@@ -179,6 +180,11 @@ p {
 }
 .bold {
   font-weight: bold;
+}
+.content-header {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 2px;
 }
 .page-title {
   color: #333333;
