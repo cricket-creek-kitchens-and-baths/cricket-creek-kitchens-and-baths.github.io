@@ -1,7 +1,7 @@
 export function KitchensPage() {
   return (
-    <div className="page" data-name={KitchensPage.name}>
+    <article className="page" data-name={KitchensPage.name}>
       KitchensPage
-    </div>
+    </article>
   );
 }

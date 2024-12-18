@@ -22,9 +22,9 @@ export function HomePage() {
   // position="relative"
 
   return (
-    <div className="page" data-name={HomePage.name}>
+    <>
       <BackdropImage imageSrc={kitchenImageSrc} />
-
-    </div>
+      <article className="page" data-name={HomePage.name}></article>
+    </>
   );
 }

@@ -1,7 +1,7 @@
 export function GalleryPage() {
   return (
-    <div className="page" data-name={GalleryPage.name}>
+    <article className="page" data-name={GalleryPage.name}>
       GalleryPage
-    </div>
+    </article>
   );
 }

@@ -1,7 +1,7 @@
 export function FaqPage() {
   return (
-    <div className="page" data-name={FaqPage.name}>
+    <article className="page" data-name={FaqPage.name}>
       FaqPage
-    </div>
+    </article>
   );
 }
