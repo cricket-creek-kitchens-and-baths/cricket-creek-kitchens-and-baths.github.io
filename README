@@ -1,1 +1,11 @@
 # Cricket Creek Kitchens &amp; Baths
+
+### TODO
+
+- add google analytics script (<head>)
+- base64 encode fonts & inject into <head>
+- add script to set & detect theme
+- create dark mode
+- setup email (google workspaces, cloudflare, or other)
+- domain swap
+- add google reviews https://developers.google.com/my-business/content/review-data
