@@ -1,0 +1,13 @@
+.tagline {
+  color: #000000;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.8;
+}
+
+/* .tagline {
+  padding-top: 15px;
+  text-align: center;
+} */

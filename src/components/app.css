@@ -19,14 +19,14 @@
   align-content: flex-start;
   display: flex;
   flex-wrap: var(--page-column-wrap);
-  gap: var(--column-gap);
+  gap: var(--section-gap);
 }
 .page section.primary {
   width: var(--page-column-width);
 }
 .page section.secondary {
   border-left: var(--column-divider);
-  padding-left: var(--column-padding);
+  padding-left: var(--column-gap);
 }
 
 .header,
@@ -72,7 +72,7 @@
 }
 .header-topbar-content {
   grid-template-columns: max-content max-content var(--theme-toggle-width);
-  z-index: 10;
+  z-index: 100;
 }
 .header-topbar-content > a {
   align-items: center;
@@ -111,7 +111,7 @@
 }
 .page {
   height: 100%;
-  padding: 50px 0;
+  padding: var(--page-gap) 0;
 }
 .header-topbar,
 .footer {
@@ -161,7 +161,7 @@ svg:focus {
 }
 section,
 p {
-  margin: 0 0 20px;
+  margin: var(--line-margin);
 }
 p {
   color: var(--text-color);
@@ -181,9 +181,11 @@ p {
   font-weight: bold;
 }
 .page-title {
+  color: #333333;
   font-family: 'Philosopher';
   font-size: 26px;
   line-height: 36px;
+  margin: var(--line-margin);
 }
 .section-title {
   border-left: 3px solid var(--original-green);
@@ -192,7 +194,7 @@ p {
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 18px;
-  margin-bottom: 20px;
+  margin: var(--line-margin);
   padding-left: 15px;
   text-transform: uppercase;
 }

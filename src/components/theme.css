@@ -17,19 +17,26 @@
   --page-width: 92%;
   --min-page-width: 320px;
   --max-page-width: calc(1200px + var(--gap) + var(--gap));
+
   --gap: 11px;
-  --icon-size: 16px;
+  --line-gap: 20px;
+  --section-gap: 30px;
+  --page-gap: calc(var(--line-gap) + var(--section-gap));
+
   --line-height: 19px;
-  --theme-toggle-width: calc(var(--line-height) + var(--gap) + var(--gap));
   --header-height: 126px;
-  --logo-size: 88px;
   --title-height: 50px;
+  --theme-toggle-width: calc(var(--line-height) + var(--gap) + var(--gap));
+
+  --line-margin: 0px 0px var(--line-gap) 0px;
   --title-padding: 10px;
-  --column-gap: 30px;
+
+  --icon-size: 16px;
+  --logo-size: 88px;
 
   --divider: 1px solid var(--divider-color);
   --column-divider: none;
-  --column-padding: 0;
+  --column-gap: 0;
 }
 
 .theme {
@@ -61,6 +68,9 @@ html[data-theme='dark'],
     --logo-size: calc(88px * var(--scale));
     --title-height: calc(50px * var(--scale));
     --title-padding: 0;
+
+    --line-gap: 15px;
+    --section-gap: 15px;
   }
 }
 @media screen and (width >= 900px) {
@@ -68,15 +78,16 @@ html[data-theme='dark'],
     --page-column-width: 72%;
     --page-column-wrap: nowrap;
     --column-divider: var(--divider);
-    --column-padding: var(--column-gap);
+    --column-gap: var(--section-gap);
   }
 }
 
 html {
-  overflow: hidden;
-  overscroll-behavior: none;
+  /* background-color: var(--original-green); */
+  overflow-x: hidden;
+  overflow-y: scroll;
   overscroll-behavior-x: none;
-  overscroll-behavior-y: none;
+  overscroll-behavior-y: auto;
 }
 html,
 body,

@@ -1,0 +1,37 @@
+.embed {
+  --iframe-height: 315px;
+  --iframe-width: 420px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--section-gap);
+  position: relative;
+  z-index: 20;
+}
+
+.embed .skeleton {
+  border-radius: 0;
+  height: 100%;
+  position: absolute;
+  transform: unset;
+  width: 100%;
+}
+
+.embed .iframe {
+  border: 0;
+  height: var(--iframe-height);
+  max-width: var(--iframe-width);
+  transition: var(--transition-opacity);
+  width: 100%;
+}
+
+.embed .skeleton-position {
+  position: absolute;
+  transition: var(--transition-opacity);
+  z-index: -1;
+}
+
+.embed .skeleton-size {
+  height: var(--iframe-height);
+  position: relative;
+  width: var(--iframe-width);
+}
