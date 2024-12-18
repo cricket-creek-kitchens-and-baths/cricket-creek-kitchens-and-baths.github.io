@@ -149,3 +149,42 @@ export const kitchensPageContent = {
     'We understand that the kitchen is often the focal point of the home. Many events from dinner to family game night, to cooking and enjoying time with friends, make the kitchen the central gathering spot. Each family is different and has different needs regarding the design and layout of the kitchen. Whether you need more storage space, or an entirely new design, we will help you create the fabulous kitchen your family deserves.',
   ],
 } as const;
+
+export const testimonialsPageContent = [
+  {
+    name: 'D.R.',
+    location: 'Clarksville, MD.',
+    message:
+      'I had my kitchen, powder room and basement renovated. The guy did a fantastic job! He was easy to work with, the design of the spaces was very thoughtful and they turned out beautiful. His company is Cricket Creek kitchens and baths.',
+  },
+  {
+    name: 'B.C.',
+    location: 'Washington, D.C.',
+    message:
+      'Cricket Creek did a complete top to bottom remodel of our Glover Park kitchen-taking down the wall between kitchen and dining room, new cabinets, flooring, electric, appliances, the works. Did a fantastic job at a competitive price and gave us a beautiful and functional kitchen that fits the character of the rest of our house. Got the job done in a timely fashion: good communicator who showed up when he said he would; neat, organized, and easy to work with. Highly recommended.',
+  },
+  {
+    name: 'M.K.',
+    location: 'Chevy Chase, MD.',
+    message:
+      'We wanted to express our appreciation for your work on our basement. We are very happy with it and our family was very impressed over the holidays. You did an excellent job and were easy to work with. You made home renovation a painless experience.',
+  },
+  {
+    name: 'C.L.',
+    location: 'Baltimore, MD.',
+    message:
+      'We can’t say thank you enough for the great job you did with our home! We are very happy.',
+  },
+  {
+    name: 'D.M.',
+    location: 'Clarksville, MD',
+    message:
+      'We so appreciate the great work you did and are really enjoying the new kitchen!',
+  },
+  {
+    name: 'M.S.',
+    location: 'Columbia, MD',
+    message:
+      'Thank you so much for a job well done! I love my beautiful new kitchen. You are so patient and your work is impeccable. Although your work speaks for itself, I will recommend you highly to family and friends.',
+  },
+] as const;

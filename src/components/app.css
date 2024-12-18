@@ -220,6 +220,15 @@ p {
   line-height: 39px;
   margin-bottom: 15px;
 }
+.card-title {
+  color: #5e5e5e;
+  font-family: 'Philosopher';
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 28px;
+  padding: 5px;
+}
 
 p.image {
   display: flex;
@@ -230,4 +239,32 @@ p.image .inline-image {
   background-color: #eeeeee;
   border: 1px solid #dddddd;
   padding: 5px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+  padding: var(--section-gap) 0px;
+}
+.testimonial {
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin: 0px 36px;
+}
+@media screen and (width < 500px) {
+  .testimonial {
+    margin: 0px 0px;
+  }
+}
+.testimonial .testimonial-background {
+  background: linear-gradient(to bottom, #fbfbfb 0%, #ededed 100%);
+  border: 1px solid #ffffff;
+  border-radius: 4.5px;
+  padding: 20px;
+}
+.testimonial p {
+  color: #666666;
+  font-style: italic;
+  line-height: 36px;
 }
