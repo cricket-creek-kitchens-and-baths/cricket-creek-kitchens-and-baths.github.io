@@ -22,11 +22,56 @@ export const footer =
 
 export const aboutPageContent = [
   `Founded in 2001, ${shortCompanyName} is the premier choice for fabulous kitchens, beautiful baths, and great basements in ${location}. ${shortCompanyName} is the manifestation of Bill Ripple’s dream of owning his own business. His father was a master carpenter and taught him the intricacies of building. Upon graduating college, he decided to combine his background in carpentry with his degree in sales and marketing.`,
-
   `Bill is on site for every project and handles all project management needs. His background in sales and marketing helps ensure that you receive the highest quality materials at the best possible price, and his background in carpentry means you will not be disappointed in the finished product. ${shortCompanyName} is a zero-debt company, which allows even more savings to be passed on to you.`,
-
   `${shortCompanyName} is EPA Certified, fully licensed and insured, and registered with ${registeredWith}. Recycled and eco-friendly materials are used as often as possible. The professional contractors at ${shortCompanyName} design and renovate the kitchen, bath, or basement based on the needs of each individual homeowner.`,
 ] as const;
+
+export const basementsPageContent = {
+  title: 'Basement Remodeling',
+  listTitle: 'Great Basement Ideas',
+  items: [
+    `Man Cave / Lady's Lair. Everyone needs one.`,
+    `Home Theater`,
+    `Wet Bar`,
+    `Adult Entertainment`,
+    `Recreation Room`,
+    `Children’s Play Room`,
+    `Family Room`,
+    `Organized Storage`,
+    `…Whatever you want`,
+  ],
+  paragraphs: [
+    'Great basements are a rarity. Most people who are looking to add living space to their home don’t consider renovating the basement. They often choose to add a room or two to the upper levels of the home instead. If you’re looking to add square footage to your home, consider renovating your basement instead of adding more rooms.',
+    'The basement is often the most neglected area of the home. Often unfinished and used as mass storage, this diamond in the rough could transform into anything you wish. The professional designers and contractors at Cricket Creek can help with design ideas that you may not know are possible. We will help you realize the true greatness of your finished or unfinished basement.',
+    'The design and renovate process begins with a one-on-one consultation at your home. We’ll discuss options and create a draft based on the design you have in mind. When you’re happy with the design, and we’re sure we understand what you want, we’ll help pick out materials that work well together. We’ll help get you the best prices possible on all materials and finishing products.',
+  ],
+} as const;
+
+export const bathroomsPageContent = {
+  title: 'Bathroom Remodeling',
+  listTitle: 'How the Bathroom Remodeling Process Works',
+  items: [
+    `Tell us your ideas. We’ll help design your beautiful bathroom based
+    on your ideas, not ours. We will present options and help spark
+    ideas during the design process.`,
+    `Choose the materials and hardware. We’ll help pick out materials and
+    hardware that work well together to provide the look you desire. We’ll
+    help get the best price possible.`,
+    `Deconstruction begins. We’ll schedule a date to begin the
+    deconstruction of your existing bathroom. We will be very mindful of
+    the disruption and mess, cleaning as often as needed to protect your
+    home.`,
+    `Bathroom remodeling begins. You will, of course, be able to watch the
+    process if you wish. It’s very interesting to watch as your Listd
+    bathroom becomes a new, beautiful bathroom.`,
+    `The project is finished. Your old bathroom has been transformed into a
+    work of beauty.`,
+  ],
+  paragraphs: [
+    'Bathroom remodeling projects are often some of the most challenging. Special consideration must be taken to ensure proper supports are in place for large tubs, and everything must fit together just right for the finished product to be perfect. The professional contractors here at Cricket Creek understand this concept, and will work diligently to ensure that you get the beautiful bath you want.',
+    'Each individual homeowner is unique. The needs of the previous owner were very different from your needs. Our goal is to create the beautiful bath you have in mind within the budget you set.',
+  ],
+} as const;
 
 export const contactPageContent =
   'Thank you for taking the time to visit our site. If you have questions, I want to make sure we answer them for you. If you are ready to discuss your project in detail, let’s sit down and come up with a realistic plan that makes sense to your family and your budget.' as const;
@@ -88,3 +133,19 @@ export const faqPageContent = [
     joy in their lives.`,
   },
 ];
+
+export const kitchensPageContent = {
+  title: 'Kitchen Remodeling',
+  listTitle: 'How the Kitchen Remodeling Process Works',
+  items: [
+    'Tell us your ideas. We’ll help design your beautiful bathroom based on your ideas, not ours. We will present options and help spark ideas during the design process.',
+    'Choose the materials and hardware. We’ll help pick out materials and hardware that work well together to provide the look you desire. We’ll help get the best price possible.',
+    'Deconstruction begins. We’ll schedule a date to begin the deconstruction of your existing bathroom. We will be very mindful of the disruption and mess, cleaning as often as needed to protect your home.',
+    'Bathroom remodeling begins. You will, of course, be able to watch the process if you wish. It’s very interesting to watch as your Listd bathroom becomes a new, beautiful bathroom.',
+    'The project is finished. Your old bathroom has been transformed into a work of beauty.',
+  ],
+  paragraphs: [
+    'Kitchen remodeling projects are often pushed off to the last possible minute because of the disruption it creates in daily life. The professional contractors at Cricket Creek work hard to minimize the disruption, as well as the mess. Renovation is messy business, but we do what we can to maintain a clean workspace and respect your family’s schedule.',
+    'We understand that the kitchen is often the focal point of the home. Many events from dinner to family game night, to cooking and enjoying time with friends, make the kitchen the central gathering spot. Each family is different and has different needs regarding the design and layout of the kitchen. Whether you need more storage space, or an entirely new design, we will help you create the fabulous kitchen your family deserves.',
+  ],
+} as const;

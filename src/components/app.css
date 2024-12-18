@@ -141,7 +141,7 @@
 
 /* type selectors */
 body {
-  font-family: 'noto-sans';
+  font-family: 'Open Sans';
   line-height: 28px;
 }
 a {
@@ -166,7 +166,7 @@ p {
 }
 p {
   color: var(--text-color);
-  font-family: 'noto-sans';
+  font-family: 'Open Sans';
   font-feature-settings: normal;
   font-kerning: auto;
   font-optical-sizing: auto;
@@ -204,6 +204,14 @@ p {
   padding-left: 15px;
   text-transform: uppercase;
 }
+.section-header {
+  color: #333333;
+  font-family: 'Philosopher';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: var(--line-margin);
+}
 .title {
   color: #000000;
   font-size: 22px;
@@ -211,4 +219,15 @@ p {
   letter-spacing: normal;
   line-height: 39px;
   margin-bottom: 15px;
+}
+
+p.image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+p.image .inline-image {
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  padding: 5px;
 }
