@@ -1,3 +1,4 @@
+import { ContactDetails } from '@/components/ContactDetails';
 import { ContactUsToday } from '@/components/ContactUsToday';
 import { Embed } from '@/components/Embed';
 import { Tagline } from '@/components/Tagline';
@@ -10,7 +11,7 @@ import {
 export function AboutPage() {
   return (
     <article className="page" data-name={AboutPage.name}>
-      <section>
+      <section className="primary">
         <Embed src={src} />
         <div className="page-title">{companyName}</div>
         {paragraphs.map((content, index) => (
@@ -19,6 +20,7 @@ export function AboutPage() {
         <ContactUsToday />
         <Tagline />
       </section>
+      <ContactDetails />
     </article>
   );
 }
