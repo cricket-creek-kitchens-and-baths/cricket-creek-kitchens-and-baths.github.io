@@ -1,28 +1,90 @@
-export const location = 'Coastal, Delaware' as const;
+export const shortLocation = 'Delaware' as const;
+export const location = `Coastal, ${shortLocation}` as const;
 export const phone = '+1-800-868-1148' as const;
 export const email = 'bill@cckb.net' as const;
 export const tagline = 'Renovations Designed to Improve Your Life' as const;
-export const companyName = ['Cricket Creek', 'kitchens & baths'] as const;
-export const companyNameDisplayString =
-  `${companyName[0]} ${companyName[1]}` as const;
+
+export const shortCompanyName = 'Cricket Creek' as const;
+export const companyNameParts = [shortCompanyName, 'kitchens & baths'] as const;
+export const companyName =
+  `${shortCompanyName} ${companyNameParts[1]}` as const;
 
 export const registeredWith =
   'the Maryland Home Improvement Commission' as const;
 export const epaCertificationNumber = '#R-I-18343-10-02579' as const;
 
 const youtubeEmbedId = 'AQzH94OGG24' as const;
-export const embedSrc = `https://www.youtube.com/embed/${youtubeEmbedId}?rel=0` as const;
+export const embedSrc =
+  `https://www.youtube.com/embed/${youtubeEmbedId}?rel=0` as const;
 
 export const footer =
-  `© Copyright - ${companyNameDisplayString} | All Rights Reserved.` as const;
+  `© Copyright - ${companyName} | All Rights Reserved.` as const;
 
 export const aboutPageContent = [
-  `Founded in 2001, ${companyName[0]} is the premier choice for fabulous kitchens, beautiful baths, and great basements in ${location}. ${companyName[0]} is the manifestation of Bill Ripple’s dream of owning his own business. His father was a master carpenter and taught him the intricacies of building. Upon graduating college, he decided to combine his background in carpentry with his degree in sales and marketing.`,
+  `Founded in 2001, ${shortCompanyName} is the premier choice for fabulous kitchens, beautiful baths, and great basements in ${location}. ${shortCompanyName} is the manifestation of Bill Ripple’s dream of owning his own business. His father was a master carpenter and taught him the intricacies of building. Upon graduating college, he decided to combine his background in carpentry with his degree in sales and marketing.`,
 
-  `Bill is on site for every project and handles all project management needs. His background in sales and marketing helps ensure that you receive the highest quality materials at the best possible price, and his background in carpentry means you will not be disappointed in the finished product. ${companyName[0]} is a zero-debt company, which allows even more savings to be passed on to you.`,
+  `Bill is on site for every project and handles all project management needs. His background in sales and marketing helps ensure that you receive the highest quality materials at the best possible price, and his background in carpentry means you will not be disappointed in the finished product. ${shortCompanyName} is a zero-debt company, which allows even more savings to be passed on to you.`,
 
-  `${companyName[0]} is EPA Certified, fully licensed and insured, and registered with ${registeredWith}. Recycled and eco-friendly materials are used as often as possible. The professional contractors at ${companyName[0]} design and renovate the kitchen, bath, or basement based on the needs of each individual homeowner.`,
+  `${shortCompanyName} is EPA Certified, fully licensed and insured, and registered with ${registeredWith}. Recycled and eco-friendly materials are used as often as possible. The professional contractors at ${shortCompanyName} design and renovate the kitchen, bath, or basement based on the needs of each individual homeowner.`,
 ] as const;
 
 export const contactPageContent =
   'Thank you for taking the time to visit our site. If you have questions, I want to make sure we answer them for you. If you are ready to discuss your project in detail, let’s sit down and come up with a realistic plan that makes sense to your family and your budget.' as const;
+
+export const faqPageContent = [
+  {
+    question: `Is ${shortCompanyName} a licensed company?`,
+    answer: `Yes we are licensed in ${shortLocation}. In fact, since the company’s start we
+    have had zero complaints of any kind filed against us for anything.
+    That means you can expect to have a problem free, fun renovation
+    experience.`,
+  },
+  {
+    question: `Is ${shortCompanyName} an Eco-friendly company?`,
+    answer: `Yes. It starts with the design phase of your renovation. We start with
+    energy efficient products like appliances, lights and insulation.
+    Whenever possible we locally or regionally source these products.
+    Next, these products are installed using the best practices and
+    procedures to maximize efficiencies. Finally, the items that are
+    removed during the renovation are recycled and denoted to places like
+    Restore where they are reused.`,
+  },
+  {
+    question: `Is ${shortCompanyName} certified by the EPA concerning lead paint?`,
+    answer: `Yes, we are an EPA Certified (${epaCertificationNumber}) Renovation
+    Company. We are properly trained so we can correctly detect and remove
+    lead contaminated paint from your home during your renovation to
+    protect you and your family from lead paint poisoning.`,
+  },
+  {
+    question: `Is ${shortCompanyName} insured?`,
+    answer: `Yes, ${shortCompanyName} is Bonded and Insured to the levels required to
+    protect you in the case of any unforeseen, unplanned incidents.
+    Detailed policy information is available upon request.`,
+  },
+  {
+    question: `Where did the name ${shortCompanyName} come from?`,
+    answer: ` ${shortCompanyName} is an actual Creek very near to where the office started
+    in Maryland. It is a beautiful, winding Creek with large creek stones
+    and large overhanging trees that turns into the Middle Patuxent River,
+    that turns into the Patuxent River that flows into the Chesapeake Bay.`,
+  },
+  {
+    question: `What cabinets do you sell?`,
+    answer: `We are an Independent, Objective, Referral based company that does not
+    push a particular product. Instead, we focus on the needs and wants of
+    the homeowner and help them find the right product that is the best
+    fit for them.`,
+  },
+  {
+    question: `Does ${shortCompanyName} use subcontractors?`,
+    answer: `Bill, the owner of ${shortCompanyName} is onsite for every renovation to
+    either supervise or perform the renovations for you. In addition, the
+    company uses various subcontractors for different parts of your
+    renovation. Each of these subcontractors has been utilized by Cricket
+    Creek for over ten years. They represent the best available craftsman
+    in their respective fields. This provides the homeowner with the best
+    possible quality renovation that will provide years of improvement and
+    joy in their lives.`,
+  },
+];
