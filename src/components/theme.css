@@ -1,18 +1,16 @@
 :root {
   --page-width: 92%;
   --min-page-width: 320px;
-  --max-page-width: calc(1200px + var(--page-gutter) + var(--page-gutter));
-  --page-gutter: 11px;
+  --max-page-width: calc(1200px + var(--gap) + var(--gap));
+  --gap: 11px;
   --icon-size: 16px;
   --line-height: 19px;
-  --theme-toggle-width: calc(
-    var(--line-height) + var(--page-gutter) + var(--page-gutter)
-  );
+  --theme-toggle-width: calc(var(--line-height) + var(--gap) + var(--gap));
 }
 
 @media screen and (width < 350px) {
   :root {
-    --page-gutter: 8px;
+    --gap: 8px;
   }
 }
 
@@ -70,8 +68,9 @@ body,
 }
 
 :root {
-  --dark-green: #016520;
-  --green: #019934;
+  --original-green: #019934;
+  --original-light-green: #84c340;
+  --green: #016520;
   --light-green: #84c340;
   --white: #ffffff;
 }
