@@ -1,21 +1,16 @@
 import type { MouseEventHandler } from 'react';
-import { useCallback, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { Route } from '@/routes';
 
 export type SidebarProps = {
   handleClose: MouseEventHandler<HTMLDivElement & HTMLAnchorElement>;
+  handleToggle: MouseEventHandler<HTMLDivElement>;
+  open: boolean;
 };
-export function Sidebar({ handleClose }: SidebarProps) {
-  const [open, setOpen] = useState<boolean>(false);
-
-  const handleToggle = useCallback(() => {
-    setOpen((isOpen) => !isOpen);
-  }, []);
-
+export function Sidebar({ handleClose, handleToggle, open }: SidebarProps) {
   return (
-    <div className="sidebar">
+    <aside className="sidebar">
       <div className="close-menu-button" onClick={handleClose}>
         <div>Close Menu</div>
         <span className="icon-close"></span>
@@ -37,7 +32,6 @@ export function Sidebar({ handleClose }: SidebarProps) {
         )}
       </div>
 
-      {/* handleClose={closeAll} */}
       {open ? (
         <NavLink
           className="sidebar-service"
@@ -78,6 +72,6 @@ export function Sidebar({ handleClose }: SidebarProps) {
       <NavLink onClick={handleClose} to={Route.Contact}>
         Contact Us
       </NavLink>
-    </div>
+    </aside>
   );
 }

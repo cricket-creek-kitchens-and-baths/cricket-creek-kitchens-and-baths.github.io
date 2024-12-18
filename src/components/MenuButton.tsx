@@ -5,15 +5,21 @@ import type { SidebarProps } from '@/components/Sidebar';
 import { Sidebar } from '@/components/Sidebar';
 
 export function MenuButton() {
-  const [open, setOpen] = useState(false);
+  const [openSidebar, setOpenSidebar] = useState<boolean>(false);
+  const [openServices, setOpenServices] = useState<boolean>(false);
 
   const handleOpen = useCallback(() => {
-    setOpen(true);
+    setOpenSidebar(true);
   }, []);
 
   const handleClose: SidebarProps['handleClose'] = useCallback((event) => {
     event.stopPropagation();
-    setOpen(false);
+    setOpenSidebar(false);
+    setOpenServices(false);
+  }, []);
+
+  const handleToggle = useCallback(() => {
+    setOpenServices((isOpen) => !isOpen);
   }, []);
 
   return (
@@ -24,8 +30,19 @@ export function MenuButton() {
     >
       <span className="icon-menu"></span>
       <div className="menu-button-label">Menu</div>
-      <Drawer anchor="left" onClose={handleClose} open={open}>
-        <Sidebar handleClose={handleClose} />
+      <Drawer
+        anchor="left"
+        // https://github.com/mui/material-ui/issues/43106#issuecomment-2314809028
+        closeAfterTransition={false}
+        keepMounted={true}
+        onClose={handleClose}
+        open={openSidebar}
+      >
+        <Sidebar
+          handleClose={handleClose}
+          handleToggle={handleToggle}
+          open={openServices}
+        />
       </Drawer>
     </div>
   );
