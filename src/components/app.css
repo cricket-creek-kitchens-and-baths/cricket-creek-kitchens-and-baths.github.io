@@ -105,7 +105,8 @@
 }
 .header-nav-content {
   grid-template-columns: max-content 1fr;
-  grid-template-rows: max-content;
+  grid-template-rows: 1fr;
+  height: 100%;
 }
 .header-topbar {
   border-bottom: 1px solid var(--light-green);
