@@ -1,3 +1,7 @@
+import { NavLink } from 'react-router-dom';
+
+import { Route } from '@/routes';
+
 export function Testimonials() {
   return (
     <section className="elementor-section elementor-top-section elementor-element elementor-element-ac95ca2 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default">
@@ -48,17 +52,17 @@ export function Testimonials() {
                 <div className="elementor-element elementor-element-78ab6dba elementor-align-center elementor-widget elementor-widget-button">
                   <div className="elementor-widget-container">
                     <div className="elementor-button-wrapper">
-                      <a
+                      <NavLink
                         className="elementor-button-link elementor-button elementor-size-md"
-                        href="/contact-us"
                         role="button"
+                        to={Route.Contact}
                       >
                         <span className="elementor-button-content-wrapper">
                           <span className="elementor-button-text">
                             Contact Us
                           </span>
                         </span>
-                      </a>
+                      </NavLink>
                     </div>
                   </div>
                 </div>

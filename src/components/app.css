@@ -278,12 +278,43 @@ p {
   line-height: 28px;
   padding: 5px;
 }
+.cards-title {
+  color: #292929;
+  font-family: 'Philosopher';
+  font-size: 34px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 34px;
+}
+.service-card-title {
+  color: var(--original-green);
+  font-family: 'Philosopher';
+  font-size: 20px;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 20px;
+  padding: 20px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 .gallery-title {
   color: #333333;
   font-family: 'Philosopher';
   font-size: 18px;
   padding: 10px;
   text-align: center;
+}
+.title-line {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  width: 100%;
+}
+.title-line > div {
+  border-top: 1px solid #000000;
+  width: 5%;
 }
 .gallery-buttons {
   display: grid;
@@ -395,6 +426,42 @@ button.about-us {
 }
 .service-cards {
   background-color: #ffffff;
-  height: 670px;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
   width: 100%;
+}
+.card-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+@media only screen and (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .service-cards {
+    margin-top: 0;
+  }
+  .service-cards p {
+    max-width: 500px;
+  }
+  .service-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.service-card-image-link {
+  height: 100%;
+  width: 100%;
+}
+.service-card .service-card-image {
+  border-radius: 10px;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }

@@ -1,4 +1,7 @@
+import { NavLink } from 'react-router-dom';
+
 import { homePageContent } from '@/content';
+import { Route } from '@/routes';
 
 export function KitchenTitleCard() {
   return (
@@ -31,17 +34,17 @@ export function KitchenTitleCard() {
                 <div className="elementor-element elementor-element-21fd303f elementor-widget elementor-widget-button">
                   <div className="elementor-widget-container">
                     <div className="elementor-button-wrapper">
-                      <a
+                      <NavLink
                         className="elementor-button-link elementor-button elementor-size-sm"
-                        href="/about-cricket-creek"
                         role="button"
+                        to={Route.About}
                       >
                         <span className="elementor-button-content-wrapper">
                           <span className="elementor-button-text">
                             About Us
                           </span>
                         </span>
-                      </a>
+                      </NavLink>
                     </div>
                   </div>
                 </div>
