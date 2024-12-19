@@ -200,6 +200,14 @@
 }
 .header-nav {
   align-items: center;
-  border-bottom: 1px solid var(--divider-color);
   height: var(--header-height);
+}
+.header:after {
+  border-bottom: 1px solid var(--divider-color);
+  bottom: 0;
+  content: ' ';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 0;
 }
