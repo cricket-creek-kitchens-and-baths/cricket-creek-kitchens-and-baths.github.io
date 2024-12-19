@@ -11,9 +11,10 @@
   "dependencies": {
     "@emotion/styled": "*",
     "@mui/material": "*",
+    "photoswipe": "5.4.4",
     "react": "*",
     "react-dom": "*",
-    "react-router-dom": "*"
+    "react-router-dom": "7.0.2"
   },
   "devDependencies": {
     "@types/node": "*",
