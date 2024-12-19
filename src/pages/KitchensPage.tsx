@@ -17,7 +17,7 @@ export function KitchensPage() {
             alt={title}
             className="inline-image"
             loading="lazy"
-            src="/images/kitchen-page.jpg"
+            src="kitchen-page.jpg"
             style={{
               aspectRatio: 800 / 451,
               width: '100%',

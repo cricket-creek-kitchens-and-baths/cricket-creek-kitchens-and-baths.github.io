@@ -46,7 +46,7 @@ export function Header() {
               alt={companyName}
               className="logo-title"
               draggable={false}
-              src="/images/logo-title.png"
+              src="logo-title.png"
             />
           </NavLink>
 

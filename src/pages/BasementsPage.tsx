@@ -26,7 +26,7 @@ export function BasementsPage() {
             alt={title}
             className="inline-image"
             loading="lazy"
-            src="/images/basement-page.jpg"
+            src="basement-page.jpg"
             style={{
               aspectRatio: 800 / 451,
               width: '100%',

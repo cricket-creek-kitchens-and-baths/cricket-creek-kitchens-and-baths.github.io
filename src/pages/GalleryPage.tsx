@@ -1,86 +1,84 @@
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
+import { imageData } from '@/data/images';
 import { useLightbox } from '@/hooks/useLightbox';
 
 const kitchens = [
   'gallery-kitchens-1.jpeg',
-  // 'gallery-kitchens-2.jpeg',
-  // 'gallery-kitchens-3.jpeg',
-  // 'gallery-kitchens-4.jpeg',
-  // 'gallery-kitchens-5.jpeg',
-  // 'gallery-kitchens-6.jpeg',
-  // 'gallery-kitchens-7.jpeg',
-  // 'gallery-kitchens-8.jpeg',
-  // 'gallery-kitchens-9.jpeg',
-  // 'gallery-kitchens-10.jpeg',
-  // 'gallery-kitchens-11.jpeg',
-  // 'gallery-kitchens-12.jpeg',
-  // 'gallery-kitchens-13.jpeg',
-  // 'gallery-kitchens-14.jpeg',
-  // 'gallery-kitchens-15.jpeg',
-  // 'gallery-kitchens-16.jpeg',
-  // 'gallery-kitchens-17.jpeg',
-  // 'gallery-kitchens-18.jpeg',
-  // 'gallery-kitchens-19.jpeg',
-  // 'gallery-kitchens-20.jpeg',
-  // 'gallery-kitchens-21.jpeg',
-  // 'gallery-kitchens-22.jpeg',
-  // 'gallery-kitchens-23.jpeg',
-  // 'gallery-kitchens-24.jpeg',
-  // 'gallery-kitchens-25.jpeg',
+  'gallery-kitchens-2.jpeg',
+  'gallery-kitchens-3.jpeg',
+  'gallery-kitchens-4.jpeg',
+  'gallery-kitchens-5.jpeg',
+  'gallery-kitchens-6.jpeg',
+  'gallery-kitchens-7.jpeg',
+  'gallery-kitchens-8.jpeg',
+  'gallery-kitchens-9.jpeg',
+  'gallery-kitchens-10.jpeg',
+  'gallery-kitchens-11.jpeg',
+  'gallery-kitchens-12.jpeg',
+  'gallery-kitchens-13.jpeg',
+  'gallery-kitchens-14.jpeg',
+  'gallery-kitchens-15.jpeg',
+  'gallery-kitchens-16.jpeg',
+  'gallery-kitchens-17.jpeg',
+  'gallery-kitchens-18.jpeg',
+  'gallery-kitchens-19.jpeg',
+  'gallery-kitchens-20.jpeg',
+  'gallery-kitchens-21.jpeg',
+  'gallery-kitchens-22.jpeg',
+  'gallery-kitchens-23.jpeg',
+  'gallery-kitchens-24.jpeg',
+  'gallery-kitchens-25.jpeg',
 ];
-
 const bathrooms = [
   'gallery-bathrooms-1.jpeg',
-  // 'gallery-bathrooms-2.jpeg',
-  // 'gallery-bathrooms-3.jpeg',
-  // 'gallery-bathrooms-4.jpeg',
-  // 'gallery-bathrooms-5.jpeg',
-  // 'gallery-bathrooms-6.jpeg',
-  // 'gallery-bathrooms-7.jpeg',
-  // 'gallery-bathrooms-8.jpeg',
-  // 'gallery-bathrooms-9.jpeg',
-  // 'gallery-bathrooms-10.jpeg',
-  // 'gallery-bathrooms-11.jpeg',
-  // 'gallery-bathrooms-12.jpeg',
-  // 'gallery-bathrooms-13.jpeg',
-  // 'gallery-bathrooms-14.jpeg',
-  // 'gallery-bathrooms-15.jpeg',
-  // 'gallery-bathrooms-16.jpeg',
-  // 'gallery-bathrooms-17.jpeg',
-  // 'gallery-bathrooms-18.jpeg',
-  // 'gallery-bathrooms-19.jpeg',
-  // 'gallery-bathrooms-20.jpeg',
-  // 'gallery-bathrooms-21.jpeg',
-  // 'gallery-bathrooms-22.jpeg',
-  // 'gallery-bathrooms-23.jpeg',
-  // 'gallery-bathrooms-24.jpeg',
-  // 'gallery-bathrooms-25.jpeg',
-  // 'gallery-bathrooms-26.jpeg',
-  // 'gallery-bathrooms-27.jpeg',
-  // 'gallery-bathrooms-28.jpeg',
-  // 'gallery-bathrooms-29.jpeg',
-  // 'gallery-bathrooms-30.jpeg',
-  // 'gallery-bathrooms-31.jpeg',
-  // 'gallery-bathrooms-32.jpeg',
-  // 'gallery-bathrooms-33.jpeg',
-  // 'gallery-bathrooms-34.jpeg',
-  // 'gallery-bathrooms-35.jpeg',
-  // 'gallery-bathrooms-36.jpeg',
-  // 'gallery-bathrooms-37.jpeg',
-  // 'gallery-bathrooms-38.jpeg',
-  // 'gallery-bathrooms-39.jpeg',
+  'gallery-bathrooms-2.jpeg',
+  'gallery-bathrooms-3.jpeg',
+  'gallery-bathrooms-4.jpeg',
+  'gallery-bathrooms-5.jpeg',
+  'gallery-bathrooms-6.jpeg',
+  'gallery-bathrooms-7.jpeg',
+  'gallery-bathrooms-8.jpeg',
+  'gallery-bathrooms-9.jpeg',
+  'gallery-bathrooms-10.jpeg',
+  'gallery-bathrooms-11.jpeg',
+  'gallery-bathrooms-12.jpeg',
+  'gallery-bathrooms-13.jpeg',
+  'gallery-bathrooms-14.jpeg',
+  'gallery-bathrooms-15.jpeg',
+  'gallery-bathrooms-16.jpeg',
+  'gallery-bathrooms-17.jpeg',
+  'gallery-bathrooms-18.jpeg',
+  'gallery-bathrooms-19.jpeg',
+  'gallery-bathrooms-20.jpeg',
+  'gallery-bathrooms-21.jpeg',
+  'gallery-bathrooms-22.jpeg',
+  'gallery-bathrooms-23.jpeg',
+  'gallery-bathrooms-24.jpeg',
+  'gallery-bathrooms-25.jpeg',
+  'gallery-bathrooms-26.jpeg',
+  'gallery-bathrooms-27.jpeg',
+  'gallery-bathrooms-28.jpeg',
+  'gallery-bathrooms-29.jpeg',
+  'gallery-bathrooms-30.jpeg',
+  'gallery-bathrooms-31.jpeg',
+  'gallery-bathrooms-32.jpeg',
+  'gallery-bathrooms-33.jpeg',
+  'gallery-bathrooms-34.jpeg',
+  'gallery-bathrooms-35.jpeg',
+  'gallery-bathrooms-36.jpeg',
+  'gallery-bathrooms-37.jpeg',
+  'gallery-bathrooms-38.jpeg',
+  'gallery-bathrooms-39.jpeg',
 ];
-
 const basements = [
   'gallery-basements-1.jpeg',
-  // 'gallery-basements-2.jpeg',
-  // 'gallery-basements-3.jpeg',
-  // 'gallery-basements-4.jpeg',
-  // 'gallery-basements-5.jpeg',
+  'gallery-basements-2.jpeg',
+  'gallery-basements-3.jpeg',
+  'gallery-basements-4.jpeg',
+  'gallery-basements-5.jpeg',
 ];
-
 const galleries = [
   {
     id: 'kitchens-gallery',
@@ -138,12 +136,17 @@ export function GalleryPage() {
             <ImageList cols={3} gap={8} id="kitchens-gallery" variant="masonry">
               {gallery.items.map((src) => {
                 const path = `/images/${src}`;
+                const data = imageData.find((image) => image.src === src);
+                if (!data) {
+                  console.warn(`missing metadata for image: '${src}'`);
+                  return null;
+                }
 
                 return (
                   <ImageListItem
                     component="a"
-                    data-pswp-height="500"
-                    data-pswp-width="800"
+                    data-pswp-height={data.height}
+                    data-pswp-width={data.width}
                     href={path}
                     key={src}
                     rel="noreferrer"

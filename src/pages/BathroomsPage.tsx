@@ -17,7 +17,7 @@ export function BathroomsPage() {
             alt={title}
             className="inline-image"
             loading="lazy"
-            src="/images/bathroom-page.jpg"
+            src="bathroom-page.jpg"
             style={{
               aspectRatio: 800 / 451,
               width: '100%',
