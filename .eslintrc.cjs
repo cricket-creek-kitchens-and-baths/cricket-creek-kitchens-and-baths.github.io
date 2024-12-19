@@ -20,7 +20,12 @@ const warnings = {
 };
 
 const errors = {
-  '@typescript-eslint/consistent-type-imports': 'error',
+  '@typescript-eslint/consistent-type-imports': [
+    'error',
+    {
+      disallowTypeAnnotations: false,
+    },
+  ],
   'react/jsx-no-bind': 'error',
   'react/jsx-no-constructed-context-values': 'error',
   'react/jsx-no-leaked-render': 'error',
