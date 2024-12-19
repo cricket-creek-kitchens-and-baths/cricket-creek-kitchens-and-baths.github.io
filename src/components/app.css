@@ -229,6 +229,27 @@ p {
   line-height: 28px;
   padding: 5px;
 }
+.gallery-title {
+  color: #333333;
+  font-family: 'Philosopher';
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+}
+.gallery-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+.gallery-title + .gallery-title {
+  border-left: 1px solid var(--divider-color);
+}
+@media screen and (width < 500px) {
+  .gallery-title {
+    font-size: 15px;
+    padding: 5px;
+  }
+}
 
 p.image {
   display: flex;
