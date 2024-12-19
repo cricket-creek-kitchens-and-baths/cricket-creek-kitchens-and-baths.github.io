@@ -247,24 +247,40 @@ p.image .inline-image {
   gap: var(--section-gap);
   padding: var(--section-gap) 0px;
 }
+
 .testimonial {
-  border: 1px solid #e6e6e6;
+  background: linear-gradient(to bottom, #fbfbfb 0%, #ededed 100%);
   border-radius: 5px;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: max-content 1fr max-content;
   margin: 0px 36px;
+  padding: 15px;
 }
 @media screen and (width < 500px) {
   .testimonial {
+    gap: 10px;
     margin: 0px 0px;
+    padding: 10px;
   }
-}
-.testimonial .testimonial-background {
-  background: linear-gradient(to bottom, #fbfbfb 0%, #ededed 100%);
-  border: 1px solid #ffffff;
-  border-radius: 4.5px;
-  padding: 20px;
 }
 .testimonial p {
   color: #666666;
   font-style: italic;
   line-height: 36px;
+  padding-top: 15px;
+}
+.testimonial svg.quote {
+  fill: var(--text-color);
+  font-size: 56px;
+  height: 22px;
+  opacity: 0.5;
+  stroke-width: 0.08;
+  width: 31px;
+}
+.testimonial .right-quote {
+  align-self: end;
 }
