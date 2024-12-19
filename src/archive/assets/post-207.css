@@ -292,10 +292,10 @@
   align-items: center;
 }
 .elementor-207 .elementor-element.elementor-element-ac95ca2 {
-  border-style: solid;
+  /* border-style: solid;
   border-width: 0px 0px 2px 0px;
-  border-color: #019934;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-color: #019934; */
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); */
   transition:
     background 0.3s,
     border 0.3s,

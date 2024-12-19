@@ -79,7 +79,7 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
+  /* margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
@@ -89,7 +89,7 @@ video {
   font-family: inherit;
   font-size: 100%;
   font-style: inherit;
-  font-weight: inherit;
+  font-weight: inherit; */
 }
 article,
 aside,

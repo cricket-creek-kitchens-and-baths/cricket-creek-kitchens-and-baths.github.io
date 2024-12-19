@@ -38,7 +38,7 @@ export function Header() {
           >
             <Image
               alt={companyName}
-              // className="logo"
+              className="logo"
               draggable={false}
               src="logo.png"
             />

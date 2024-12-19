@@ -50,11 +50,38 @@
   max-width: var(--max-page-width);
   width: var(--page-width);
 }
+.elementor-section {
+  display: flex;
+  justify-content: center;
+}
+.elementor-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  /* max-width: var(--max-page-width) !important; */
+  max-width: 1140px !important;
+  /* width: var(--page-width); */
+  /* width: 100% !important; */
+}
+.elementor-row {
+  /* width: 90% !important; */
+  width: 100% !important;
+}
+.elementor-column {
+  padding: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .elementor-row > .elementor-column.collapse-for-medium-and-under {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .footer-content,
 .header-topbar-content > a,
 .header-nav-links > a,
 .services-popper-label,
-.logo-link,
 .menu-button,
 .page {
   padding: var(--gap);
@@ -66,7 +93,10 @@
 }
 @media only screen and (max-width: 767px) {
   .header-topbar {
-    padding: var(--line-gap) 0;
+    padding: 12px 0;
+  }
+  .header-topbar-content {
+    justify-content: center;
   }
 }
 
@@ -81,9 +111,15 @@
   border-bottom: 1px solid var(--light-green);
 }
 .header-topbar-content {
-  grid-template-columns: max-content max-content var(--theme-toggle-width);
+  grid-template-columns: repeat(2, max-content);
+  /* grid-template-columns: max-content max-content var(--theme-toggle-width); */
   z-index: 100;
 }
+/* @media screen and (width < 767px) {
+  .header-topbar {
+    justify-content: center;
+  }
+} */
 .header-topbar-content > a {
   align-items: center;
   color: inherit;
@@ -109,9 +145,9 @@
 .header-topbar-content > a:hover {
   color: inherit;
 }
-.header-topbar-content > a:hover:before {
+/* .header-topbar-content > a:hover:before {
   opacity: 1;
-}
+} */
 
 .footer {
   border-top: 1px solid var(--light-green);
@@ -124,7 +160,7 @@
   background-color: var(--original-green);
   color: var(--white);
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: var(--line-height);
 }
 
@@ -180,13 +216,15 @@ p {
   font-feature-settings: normal;
   font-kerning: auto;
   font-optical-sizing: auto;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 100%;
   font-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   font-stretch: 100%;
   font-style: normal;
-  font-variation-settings: 'wdth' 100;
-  font-weight: 400; /* Use a value from 100 to 900 */
+  /* font-variation-settings: 'wdth' 100; */
+  /* Use a value from 100 to 900 */
+  font-weight: inherit;
 }
 .bold {
   font-weight: bold;

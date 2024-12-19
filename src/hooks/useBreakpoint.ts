@@ -3,7 +3,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 export enum Breakpoint {
   // xsmall = 350,
   // small = 500,
-  // medium = 767,
+  medium = 767,
   large = 1096,
 }
 

@@ -1456,9 +1456,9 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
   -moz-appearance: none;
   color: inherit;
   font-size: inherit;
-  font-family: inherit;
+  /* font-family: inherit;
   font-weight: inherit;
-  font-style: inherit;
+  font-style: inherit; */
   text-transform: inherit;
   letter-spacing: inherit;
   line-height: inherit;
