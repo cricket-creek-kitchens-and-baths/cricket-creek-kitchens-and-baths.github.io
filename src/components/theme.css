@@ -51,10 +51,10 @@ html[data-theme='dark'],
   --light-green: #019934;
   --filter: brightness(0.6); */
 }
-.theme {
+/* .theme {
   background-color: var(--theme-color);
   color: var(--text-color);
-}
+} */
 
 @media screen and (width < 350px) {
   :root {
@@ -91,19 +91,41 @@ html {
 }
 html,
 body,
-.theme {
-  display: grid;
-  margin: 0;
-  min-height: 100vh;
-  min-width: var(--min-page-width);
-  padding: 0;
+#root,
+.theme,
+.main {
+  /* margin: 0; */
+  /* padding: 0; */
   position: relative;
 }
+html,
+body,
+#root,
+.theme {
+  height: 100%;
+  min-width: var(--min-page-width);
+}
+
+.theme {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+/* @media only screen and (max-width: 767px) {
+  .theme {
+    width: 100% !important;
+  }
+} */
 
 #theme-toggle {
   display: none;
   margin: 0;
   padding: 0;
+}
+
+/* remove after implementing theme toggle */
+#theme-toggle-label {
+  display: none !important;
 }
 
 .theme {

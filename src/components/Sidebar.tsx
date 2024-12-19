@@ -13,7 +13,11 @@ export function Sidebar({
 }) {
   return (
     <aside className="sidebar">
-      <div className="close-menu-button" onClick={handleClose}>
+      <div
+        aria-label="Close Menu"
+        className="close-menu-button"
+        onClick={handleClose}
+      >
         <div>Close Menu</div>
         <span className="icon-close"></span>
       </div>

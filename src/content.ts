@@ -1,8 +1,8 @@
 export const shortLocation = 'Delaware' as const;
-export const location = `Coastal, ${shortLocation}` as const;
+export const location = `Coastal ${shortLocation}` as const;
 export const phone = '+1-800-868-1148' as const;
 export const email = 'bill@cckb.net' as const;
-export const tagline = 'Renovations Designed to Improve Your Life' as const;
+export const tagline = 'Renovations Designed to Improve Your Life.' as const;
 
 export const shortCompanyName = 'Cricket Creek' as const;
 export const companyNameParts = [shortCompanyName, 'kitchens & baths'] as const;
@@ -188,3 +188,41 @@ export const testimonialsPageContent = [
       'Thank you so much for a job well done! I love my beautiful new kitchen. You are so patient and your work is impeccable. Although your work speaks for itself, I will recommend you highly to family and friends.',
   },
 ] as const;
+
+export const homePageContent = {
+  titleCards: [
+    {
+      title: tagline,
+      subtitle: `Kitchen, Bath and Basement design and renovation specialists serving ${location}.`,
+    },
+    {
+      title: 'Your renovation experts.',
+      subtitle:
+        'Dedicated to offering the highest quality services in bathroom, kitchen, and basement renovations.',
+    },
+  ],
+  services: {
+    title: 'Our Services',
+    cards: [
+      {
+        title: 'Fabulous Kitchens',
+        description:
+          'We understand that the kitchen is often the focal point of the home. Many events from dinner to family game night, to cooking and enjoying time with friends, make the kitchen the central gathering spot.',
+      },
+      {
+        title: 'Beautiful Bathrooms',
+        description:
+          'Bathroom remodeling projects are often some of the most challenging. The professional contractors here at Cricket Creek understand this concept, and will work diligently to ensure that you get the beautiful bath you want.',
+      },
+      {
+        title: 'Great Basements',
+        description:
+          'Most people who are looking to add living space to their home don’t consider renovating the basement. If you’re looking to add square footage to your home, consider renovating your basement instead of adding more rooms.',
+      },
+    ],
+  },
+  testimonials: {
+    title: 'What Our Clients Are Saying',
+    cards: testimonialsPageContent,
+  },
+} as const;

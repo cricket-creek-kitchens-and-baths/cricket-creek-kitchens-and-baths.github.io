@@ -24,7 +24,7 @@
   text-decoration: none;
   transition: var(--transition-color);
 }
-.header-nav-links > a:is(:hover, :focus) {
+.header-nav-links > a:hover {
   color: var(--light-green);
 }
 #services-menu {
@@ -48,7 +48,7 @@
   text-transform: none;
   transition: var(--transition-color);
 }
-#services-menu > a:is(:hover, :focus) {
+#services-menu > a:hover {
   background-color: #f8f8f8;
   color: #555555;
 }
@@ -65,7 +65,7 @@
   transition: var(--transition-color);
   white-space: nowrap;
 }
-.services-popper-label:is(:hover, :focus) {
+.services-popper-label:hover {
   color: var(--light-green);
 }
 
@@ -96,7 +96,7 @@
   transition: var(--transition-color);
   white-space: nowrap;
 }
-.menu-button:is(:hover, :focus) {
+.menu-button:hover {
   color: var(--light-green);
 }
 
@@ -108,7 +108,7 @@
   font-size: 15px;
   transition: var(--transition-color);
 }
-:is(.close-menu-button, .toggle-services, .sidebar > a):is(:hover, :focus) {
+:is(.close-menu-button, .toggle-services, .sidebar > a):hover {
   color: var(--light-green);
 }
 

@@ -7,8 +7,9 @@
 .backdrop,
 .backdrop-image,
 .backdrop-overlay {
+  height: 100%;
   left: 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   overflow: hidden;
   position: absolute;
   top: 0;
