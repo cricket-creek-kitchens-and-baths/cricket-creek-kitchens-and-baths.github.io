@@ -1,7 +1,6 @@
 import Drawer from '@mui/material/Drawer';
 import { useCallback, useState } from 'react';
 
-import type { SidebarProps } from '@/components/Sidebar';
 import { Sidebar } from '@/components/Sidebar';
 
 export function MenuButton() {
@@ -12,7 +11,7 @@ export function MenuButton() {
     setOpenSidebar(true);
   }, []);
 
-  const handleClose: SidebarProps['handleClose'] = useCallback((event) => {
+  const handleClose: ClickHandler = useCallback((event) => {
     event.stopPropagation();
     setOpenSidebar(false);
     setOpenServices(false);

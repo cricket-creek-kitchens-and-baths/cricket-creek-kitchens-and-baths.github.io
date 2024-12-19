@@ -1,14 +1,16 @@
-import type { MouseEventHandler } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { Route } from '@/routes';
 
-export type SidebarProps = {
-  handleClose: MouseEventHandler<HTMLDivElement & HTMLAnchorElement>;
-  handleToggle: MouseEventHandler<HTMLDivElement>;
+export function Sidebar({
+  handleClose,
+  handleToggle,
+  open,
+}: {
+  handleClose: ClickHandler;
+  handleToggle: ClickHandler;
   open: boolean;
-};
-export function Sidebar({ handleClose, handleToggle, open }: SidebarProps) {
+}) {
   return (
     <aside className="sidebar">
       <div className="close-menu-button" onClick={handleClose}>
