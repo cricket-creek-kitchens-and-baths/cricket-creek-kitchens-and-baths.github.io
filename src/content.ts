@@ -1,3 +1,5 @@
+import { Route } from '@/routes';
+
 export const shortLocation = 'Delaware' as const;
 export const location = `Coastal ${shortLocation}` as const;
 export const phone = '+1-800-868-1148' as const;
@@ -19,6 +21,24 @@ export const embedSrc =
 
 export const footer =
   `© Copyright - ${companyName} | All Rights Reserved.` as const;
+
+export const services = {
+  [Route.Kitchens]: {
+    title: 'Fabulous Kitchens',
+    route: Route.Kitchens,
+    image: 'kitchen-page.jpg',
+  },
+  [Route.Bathrooms]: {
+    title: 'Beautiful Bathrooms',
+    route: Route.Bathrooms,
+    image: 'bathroom-page.jpg',
+  },
+  [Route.Basements]: {
+    title: 'Great Basements',
+    route: Route.Basements,
+    image: 'basement-page.jpg',
+  },
+} as const;
 
 export const aboutPageContent = [
   `Founded in 2001, ${shortCompanyName} is the premier choice for fabulous kitchens, beautiful baths, and great basements in ${location}. ${shortCompanyName} is the manifestation of Bill Ripple’s dream of owning his own business. His father was a master carpenter and taught him the intricacies of building. Upon graduating college, he decided to combine his background in carpentry with his degree in sales and marketing.`,
@@ -205,17 +225,17 @@ export const homePageContent = {
     title: 'Our Services',
     cards: [
       {
-        title: 'Fabulous Kitchens',
+        ...services[Route.Kitchens],
         description:
           'We understand that the kitchen is often the focal point of the home. Many events from dinner to family game night, to cooking and enjoying time with friends, make the kitchen the central gathering spot.',
       },
       {
-        title: 'Beautiful Bathrooms',
+        ...services[Route.Bathrooms],
         description:
           'Bathroom remodeling projects are often some of the most challenging. The professional contractors here at Cricket Creek understand this concept, and will work diligently to ensure that you get the beautiful bath you want.',
       },
       {
-        title: 'Great Basements',
+        ...services[Route.Basements],
         description:
           'Most people who are looking to add living space to their home don’t consider renovating the basement. If you’re looking to add square footage to your home, consider renovating your basement instead of adding more rooms.',
       },
