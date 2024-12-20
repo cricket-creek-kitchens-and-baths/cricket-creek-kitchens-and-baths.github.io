@@ -3,7 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-import { ScrollToTopButton } from '@/components/ScrollToTopButton';
+import { ScrollButton } from '@/components/ScrollButton';
 import { Theme } from '@/components/Theme';
 import { useVersion } from '@/hooks/useVersion';
 
@@ -20,23 +20,8 @@ export function App() {
   }, [pathname]);
 
   return (
-    // <Theme>
-    //   <div
-    //     className="app"
-    //     data-name={App.name}
-    //     data-version={import.meta.env.APP_VERSION}
-    //   >
-    //     <ScrollToTopButton />
-    //     <Header />
-    //     <main className="main">
-    //       <Outlet />
-    //     </main>
-    //     <Footer />
-    //     </div>
-    //     </Theme>
-
     <Theme>
-      <ScrollToTopButton />
+      <ScrollButton />
       <Header />
       <main className="main" role="main">
         <Outlet />

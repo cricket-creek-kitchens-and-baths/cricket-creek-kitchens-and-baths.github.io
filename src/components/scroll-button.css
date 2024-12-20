@@ -1,0 +1,23 @@
+button.scroll-button {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 2px;
+  bottom: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  height: 40px;
+  justify-content: center;
+  line-height: 40px;
+  position: fixed;
+  right: 20px;
+  transition: var(--transition-color), var(--transition-opacity);
+  width: 40px;
+}
+
+button.scroll-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
