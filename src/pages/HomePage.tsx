@@ -14,7 +14,7 @@ export function HomePage() {
   return (
     <div className="elementor elementor-207 home-page">
       <div className="elementor-inner">
-        <div className="elementor-section-wrap">
+        <div className="elementor-section-wrap home-page-sections">
           <KitchenTitleCard />
           <ServiceCards />
           <BathroomTitleCard />
